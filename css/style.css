@@ -84,9 +84,14 @@ p {
     text-align: center;
 }
 
+
+
 /* =========================================================
    HERO — NOVO DESIGN
 ========================================================= */
+
+
+
 
 .hero {
     position: relative;
@@ -125,7 +130,7 @@ p {
     right: 0;
 
     width: 47%;
-    height: 100%;
+    height: 92%;
 
     background:
         linear-gradient(
@@ -157,10 +162,10 @@ clip-path: polygon(
 
     position: absolute;
 
-    width: 72%;
+    width: 75%;
     height: 85px;
 
-    right: -16%;
+    right: -17%;
     top: 57%;
 
     background:
@@ -375,7 +380,7 @@ clip-path: polygon(
 
     width: fit-content;
 
-    margin-bottom: 15px;
+    margin-bottom: 4px;
 
     padding: 5px 18px 5px 13px;
 
@@ -398,7 +403,7 @@ clip-path: polygon(
         4% 100%
     );
 
-    margin-top: 40px;
+    margin-top: 65px;
 }
 
 .hero-separador {
@@ -409,8 +414,8 @@ clip-path: polygon(
 
 
 /* =========================================================
-   TÍTULO
-========================================================= */
+   TÍTULO PRINCIPAL
+   ========================================================= */
 
 .hero-titulo {
     width: 100%;
@@ -419,23 +424,20 @@ clip-path: polygon(
 
 .hero-titulo h1 {
     margin: 0;
-
     font-family: "Cormorant Garamond", serif;
 
-    font-size: clamp(44px, 4.3vw, 72px);
+    /* um pouco maior no conjunto */
+    font-size: clamp(46px, 4.5vw, 76px);
 
     font-weight: 700;
-
     line-height: 0.96;
-
     letter-spacing: -1.4px;
-
     color: #5A1723;
 }
 
 /* =========================================================
    LINHAS DO TÍTULO
-========================================================= */
+   ========================================================= */
 
 .hero-titulo h1 span {
     display: block;
@@ -445,63 +447,565 @@ clip-path: polygon(
     white-space: nowrap;
 }
 
-.titulo-secundario {
-    white-space: nowrap;
+
+/* =========================================================
+   COMO SE LIBERTAR — COBRE + PONTOS DE LUZ
+   ========================================================= */
+
+.titulo-linha:first-child {
+    position: relative;
+
+    font-weight: 800;
+
+    /* deixa um pouquinho mais encorpado */
+    -webkit-text-stroke: 0.45px #98452F;
+
+    letter-spacing: -2px;
+
+    line-height: 0.90;
+
+    background:
+
+        /* REFLEXO 1 */
+        radial-gradient(
+            circle at 8% 48%,
+            rgba(255, 250, 245, 0.98) 0%,
+            rgba(255, 238, 225, 0.75) 1.1%,
+            rgba(255, 225, 210, 0.18) 2.5%,
+            transparent 4%
+        ),
+
+        /* REFLEXO 2 */
+        radial-gradient(
+            circle at 27% 32%,
+            rgba(255, 252, 248, 0.98) 0%,
+            rgba(255, 237, 222, 0.70) 1.2%,
+            rgba(255, 225, 208, 0.15) 2.5%,
+            transparent 4%
+        ),
+
+        /* REFLEXO 3 */
+        radial-gradient(
+            circle at 43% 62%,
+            rgba(255, 250, 245, 0.95) 0%,
+            rgba(255, 235, 220, 0.60) 1.2%,
+            transparent 3.8%
+        ),
+
+        /* REFLEXO 4 */
+        radial-gradient(
+            circle at 58% 34%,
+            rgba(255, 252, 248, 0.98) 0%,
+            rgba(255, 238, 223, 0.72) 1.2%,
+            rgba(255, 225, 208, 0.15) 2.5%,
+            transparent 4%
+        ),
+
+        /* REFLEXO 5 */
+        radial-gradient(
+            circle at 74% 58%,
+            rgba(255, 250, 245, 0.95) 0%,
+            rgba(255, 235, 220, 0.60) 1.2%,
+            transparent 3.8%
+        ),
+
+        /* REFLEXO 6 */
+        radial-gradient(
+            circle at 91% 35%,
+            rgba(255, 252, 248, 0.95) 0%,
+            rgba(255, 238, 223, 0.60) 1.2%,
+            transparent 3.8%
+        ),
+
+        /* COBRE */
+        linear-gradient(
+            105deg,
+            #8B3F29 0%,
+            #A95135 18%,
+            #C06A4A 32%,
+            #D08767 43%,
+            #A95538 51%,
+            #B96344 64%,
+            #CE8060 76%,
+            #A45135 88%,
+            #8C3E29 100%
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    color: transparent;
+
+    filter:
+        drop-shadow(0 0 1px rgba(91, 42, 28, 0.35))
+        drop-shadow(0 0 4px rgba(180, 90, 60, 0.12));
 }
+
+/* =========================================================
+   DA DEPENDÊNCIA — MARCA-TEXTO OLIVA
+   ========================================================= */
+
+.titulo-secundario {
+    position: relative;
+
+    display: block !important;
+
+    width: fit-content;
+
+    white-space: nowrap;
+
+    color: #F8F3EC;
+
+    font-size: 73px;
+
+    z-index: 1;
+
+    /* cria respiro entre as linhas */
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+/* =========================================================
+   PINCELADA — DA DEPENDÊNCIA
+   ========================================================= */
+
+.titulo-secundario::before {
+    content: "";
+
+    position: absolute;
+
+    left: -30px;
+    right: -32px;
+
+    top: 50%;
+
+    width: calc(100% + 62px);
+
+    /* MAIS GROSSO */
+    height: 120px;
+
+    background: #687052;
+
+    transform:
+        translateY(-50%)
+        rotate(-0.8deg);
+
+    /*
+     * PINCELADA:
+     * centro mais contínuo;
+     * falhas concentradas nas pontas.
+     */
+    clip-path: polygon(
+
+        /* ===== COMEÇO / PONTA ESQUERDA ===== */
+
+        0% 34%,
+        2% 25%,
+        4% 29%,
+        6% 20%,
+        8% 27%,
+        10% 22%,
+
+        /* ===== BORDA SUPERIOR — MAIS CONTÍNUA ===== */
+
+        15% 21%,
+        25% 19%,
+        35% 20%,
+        45% 18%,
+        55% 20%,
+        65% 19%,
+        75% 21%,
+        85% 18%,
+        92% 21%,
+
+        /* ===== FINAL / PONTA DIREITA ===== */
+
+        95% 18%,
+        97% 24%,
+        99% 19%,
+        100% 30%,
+
+        98% 39%,
+        100% 48%,
+        98% 56%,
+        100% 66%,
+        97% 75%,
+        100% 82%,
+
+        /* ===== BORDA INFERIOR — MAIS CONTÍNUA ===== */
+
+        95% 88%,
+        92% 82%,
+        85% 86%,
+        75% 84%,
+        65% 87%,
+        55% 84%,
+        45% 88%,
+        35% 85%,
+        25% 87%,
+        15% 84%,
+
+        /* ===== COMEÇO / PONTA ESQUERDA ===== */
+
+        10% 90%,
+        8% 82%,
+        6% 91%,
+        4% 84%,
+        2% 89%,
+        0% 76%,
+
+        2% 66%,
+        0% 58%,
+        2% 49%,
+        0% 42%
+    );
+
+    z-index: -1;
+
+    opacity: 0.94;
+
+    transform-origin: left center;
+
+    animation: pincelDependencia 1.7s ease-out forwards;
+}
+
+@keyframes pincelDependencia {
+
+    0% {
+        transform:
+            translateY(-50%)
+            rotate(-0.8deg)
+            scaleX(0);
+    }
+
+    65% {
+        transform:
+            translateY(-50%)
+            rotate(-0.8deg)
+            scaleX(1.04);
+    }
+
+    100% {
+        transform:
+            translateY(-50%)
+            rotate(-0.8deg)
+            scaleX(1);
+    }
+
+}
+
+/* =========================================================
+   EMOCIONAL DE UM
+   ========================================================= */
 
 .titulo-emocional {
     white-space: nowrap;
 
-    margin-top: 5px;
-    margin-bottom: -8px;
+    margin-top: 8px;
 
-    font-family: "Noto Sans", sans-serif;
     font-style: normal;
 
-    font-size: 45px;
-    font-weight: 400;
+    font-size: 48px;
+
+    font-weight: 700;
 
     letter-spacing: -1px;
+
     line-height: 0.95;
 }
 
+
 /* =========================================================
-   DESTAQUE — NARCISISTA
-========================================================= */
+   NARCISISTA — VERMELHO INTENSO + LUZ
+   ========================================================= */
 
 .titulo-destaque {
-    display: block !important;
-    color: #B52F45;
-    font-weight: 600;
-    font-size: 1.8em;
-    line-height: 1;
-    margin-top: 1px;
-    margin-bottom: 2px;
+    position: relative;
 
+    display: inline-block !important;
+
+    width: fit-content;
+
+    color: #C91432;
+
+    background:
+
+        /* PONTOS DE LUZ */
+        radial-gradient(
+            circle at 17% 38%,
+            rgba(255, 245, 245, 0.95) 0%,
+            rgba(255, 255, 255, 0.78) 1%,
+            transparent 4%
+        ),
+
+        radial-gradient(
+            circle at 38% 55%,
+            rgba(255, 250, 250, 1) 0%,
+            rgba(255, 220, 220, 0.65) 1.2%,
+            transparent 4%
+        ),
+
+        radial-gradient(
+            circle at 59% 30%,
+            rgba(255, 245, 245, 1) 0%,
+            rgba(255, 255, 255, 0.72) 1.2%,
+            transparent 4%
+        ),
+
+        radial-gradient(
+            circle at 79% 57%,
+            rgba(255, 250, 250, 1) 0%,
+            rgba(255, 220, 220, 0.65) 1.2%,
+            transparent 4%
+        ),
+
+        /* VERMELHO — MENOS ROSA */
+        linear-gradient(
+            105deg,
+            
+            #A8001F 0%,
+            #D00024 18%,
+            #b30022 32%,
+            #FF2638 40%,
+            #D90025 48%,
+            #C40021 60%,
+            #EF001F 72%,
+            #D00022 86%,
+            #A9001D 100%
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    /* MAIS GROSSO */
+    font-weight: 900;
+    -webkit-text-stroke: 0.6px #B80020;
+
+    /* MAIS COMPACTO */
+    letter-spacing: -2.5px;
+
+    /* SÓ UM POUQUINHO MAIS ACHATADO */
+    line-height: 0.86;
+
+    font-size: 1.8em;
+
+    margin-top: 1px;
+
+    margin-bottom: 7px;
+
+filter:
+    drop-shadow(0 0 2px rgba(210, 0, 30, 0.55))
+    drop-shadow(0 0 5px rgba(220, 0, 35, 0.28))
+    drop-shadow(0 0 9px rgba(220, 0, 35, 0.12));
 }
 
+/* =========================================================
+   GRIFO / PINCELADA — NARCISISTA
+   ========================================================= */
+
+.titulo-destaque::after {
+    content: "";
+
+    position: absolute;
+
+    /* COMEÇA NO R */
+    left: 27%;
+
+    /* TERMINA NO A */
+    width: 72%;
+
+    /* distância abaixo da palavra */
+    bottom: -9px;
+
+    height: 14px;
+
+    background: #C91432;
+
+    /*
+     * Pincelada com movimento:
+     *
+     * R
+     *   ╲
+     *    ╲____
+     *         ╲
+     *          ─── A
+     *
+     * A parte de cima é irregular
+     * para não parecer uma linha reta.
+     */
+    clip-path: polygon(
+
+        /* ===== BORDA SUPERIOR ===== */
+
+        0% 58%,
+        5% 48%,
+        10% 43%,
+        16% 40%,
+        22% 38%,
+
+        /* sobe suavemente */
+        29% 35%,
+        36% 32%,
+        43% 30%,
+
+        /* chega na região do T */
+        50% 31%,
+        57% 35%,
+        64% 39%,
+
+        /* volta levemente */
+        71% 42%,
+        78% 40%,
+        85% 36%,
+        92% 31%,
+
+        /* ponta no A */
+        100% 25%,
+
+        /* ===== BORDA INFERIOR ===== */
+
+        100% 63%,
+        94% 68%,
+        87% 65%,
+        80% 61%,
+        73% 64%,
+        66% 68%,
+        59% 64%,
+        52% 61%,
+        45% 64%,
+        38% 67%,
+        31% 64%,
+        24% 61%,
+        17% 64%,
+        10% 67%,
+        4% 63%,
+        0% 60%
+    );
+
+    transform: rotate(-0.8deg);
+
+    opacity: 0.95;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
 
 /* =========================================================
    ÚLTIMA LINHA
-========================================================= */
+   ========================================================= */
 
 .titulo-linha-final {
     display: block !important;
 
     color: #5A1723;
 
-    font-size: 0.78em;
+    font-size: 45px;
 
-    font-weight: 600;
+    font-weight: 650;
 
-    line-height: 1;
+    line-height: 0.98;
 
     letter-spacing: -0.5px;
-    font-size: 45px;
+
+    position: relative;
+
+    width: fit-content;
+
+    margin-top: 8px;
 }
 
 
+/* =========================================================
+   MUDAR? — LARANJA QUEIMADO + REFLEXOS
+   ========================================================= */
 
+.mudar-destaque {
+    position: relative;
+
+    display: inline-block;
+
+    font-size: inherit;
+
+    /* um pouco mais encorpado */
+    font-weight: 800;
+
+    letter-spacing: inherit;
+
+    -webkit-text-stroke: 0.45px #963E27;
+
+    background:
+
+        /* ✦ REFLEXO 1 */
+        radial-gradient(
+            circle at 25% 32%,
+            rgba(255, 250, 238, 1) 0%,
+            rgba(255, 232, 205, 0.85) 1.3%,
+            rgba(255, 220, 190, 0.20) 3%,
+            transparent 4.5%
+        ),
+
+        /* ✦ REFLEXO 2 */
+        radial-gradient(
+            circle at 76% 58%,
+            rgba(255, 250, 238, 0.98) 0%,
+            rgba(255, 230, 202, 0.78) 1.3%,
+            rgba(255, 215, 185, 0.18) 3%,
+            transparent 4.5%
+        ),
+
+        /* LARANJA QUEIMADO */
+        linear-gradient(
+            105deg,
+            #963E27 0%,
+            #e33b08 18%,
+            #C45A32 35%,
+            #D06A3B 50%,
+            #C15A32 65%,
+            #AE492B 82%,
+            #933C26 100%
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    color: transparent;
+
+    filter:
+        drop-shadow(0 0 1px rgba(145, 58, 35, 0.35))
+        drop-shadow(0 0 3px rgba(190, 78, 40, 0.12));
+}
+
+
+/* =========================================================
+   GRIFO — SOMENTE "MUDAR?"
+   ========================================================= */
+
+.mudar-destaque::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 200px;
+
+    bottom: -4px;
+
+    height: 4px;
+
+    background: #A9472C;
+
+    border-radius: 50%;
+
+    transform: rotate(-1deg);
+
+    z-index: -1;
+
+    pointer-events: none;
+}
 /* =========================================================
    DESCRIÇÃO
 ========================================================= */
@@ -720,184 +1224,23 @@ clip-path: polygon(
     display: block;
 }
 
+
 /* =========================================================
-   RESPONSIVO — TABLET
+   INCLINAÇÃO DO BLOCO PRINCIPAL — REFERÊNCIA
 ========================================================= */
 
-@media (max-width: 1100px) {
+.hero-info {
+    transform: rotate(-1.5deg);
+    transform-origin: left center;
+}
 
-    .hero::before {
-        width: 43%;
-    }
-
-    .hero-nav {
-        gap: 25px;
-    }
-
-    .hero-nav a {
-        font-size: 11px;
-    }
-
-    .hero-content {
-        grid-template-columns:
-            minmax(0, 1fr)
-            minmax(300px, 0.65fr);
-
-        column-gap: 25px;
-    }
-
-    .hero-titulo h1 {
-        font-size: clamp(38px, 4.5vw, 54px);
-    }
-
-    .hero-form {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
-    .hero-form button {
-        min-width: 0;
-    }
+.hero-titulo {
+    transform: rotate(-1.2deg);
+    transform-origin: left center;
 }
 
 
-/* =========================================================
-   RESPONSIVO — MOBILE
-========================================================= */
 
-@media (max-width: 768px) {
-
-    .hero {
-        min-height: auto;
-
-        overflow: hidden;
-    }
-
-    .hero::before {
-        width: 100%;
-        height: 42%;
-
-        top: auto;
-        bottom: 0;
-
-        clip-path: polygon(
-            0 18%,
-            100% 0,
-            100% 100%,
-            0 100%
-        );
-    }
-
-    .hero::after {
-        width: 130%;
-
-        height: 60px;
-
-        right: -40%;
-
-        top: 58%;
-
-        transform: rotate(-25deg);
-    }
-
-    .hero .container {
-        width: 88%;
-
-        min-height: auto;
-
-        padding: 95px 0 50px;
-    }
-
-    .logo-hero {
-        top: 20px;
-        left: 6%;
-
-        width: 62px;
-    }
-
-    .hero-nav {
-        display: none;
-    }
-
-    .hero-content {
-        min-height: auto;
-
-        display: block;
-
-        padding-top: 0;
-    }
-
-    .hero-left {
-        padding-top: 0;
-    }
-
-    .hero-right {
-        min-height: 300px;
-
-        margin-top: 30px;
-    }
-
-    .hero-info {
-        font-size: 12px;
-    }
-
-    .hero-titulo h1 {
-        font-size: clamp(36px, 10vw, 48px);
-
-        line-height: 0.98;
-
-        letter-spacing: -0.5px;
-    }
-
-    .titulo-linha,
-    .titulo-secundario,
-    .titulo-emocional,
-    .titulo-destaque,
-    .titulo-linha-final {
-        white-space: normal;
-    }
-
-    .hero-frase {
-        font-size: 20px;
-
-        margin-top: 15px;
-    }
-
-    .hero-description {
-        margin-top: 20px;
-
-        gap: 13px;
-    }
-
-    .hero-description p {
-        font-size: 14px;
-
-        line-height: 1.45;
-    }
-
-    .hero-form {
-        grid-template-columns: 1fr;
-
-        gap: 8px;
-
-        margin-top: 24px;
-    }
-
-    .hero-input,
-    .hero-form button {
-        height: 48px;
-    }
-
-    .hero-right img {
-        position: relative;
-
-        display: block;
-
-        width: 100%;
-
-        margin: 0 auto;
-    }
-}
 
 
 
@@ -906,16 +1249,20 @@ clip-path: polygon(
    RECONHECIMENTO — DESKTOP
    ===================================================== */
 
-.reconhecimento {
-    background-color: #F8F3EC;
+.reconhecimento { 
+    position: relative;
+    z-index: 20;
 
-    min-height: 600px;
+    background-color: #F8F3EC; 
+ 
+    min-height: 600px; 
 
-    padding: 80px 40px 55px;
-
-    text-align: center;
+    margin-top: -68px;
+ 
+    padding: 80px 40px 55px; 
+ 
+    text-align: center; 
 }
-
 
 .reconhecimento .container {
     max-width: 1200px;
@@ -3130,7 +3477,303 @@ clip-path: polygon(
     margin-left: 8px;
 }
 
+/* =========================================================
+   RESPONSIVO — DESKTOP MENOR
+   Aproximadamente 1024px até 1199px
+   ========================================================= */
 
+/* =========================================================
+   HERO — DESKTOP MENOR
+   1024px ATÉ 1199px
+   ========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .hero {
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+
+    /* =====================================================
+       CONTAINER
+       ===================================================== */
+
+    .hero .container {
+        width: 92%;
+        max-width: 1180px;
+        min-height: 100vh;
+
+        padding: 20px 0 30px;
+    }
+
+
+    /* =====================================================
+       FUNDO VINHO
+       ===================================================== */
+
+    .hero::before {
+        width: 43%;
+        height: 100%;
+
+        top: 0;
+        right: 0;
+
+        clip-path: polygon(
+            18% 0,
+            100% 0,
+            100% 100%,
+            58% 100%
+        );
+    }
+
+
+    /* =====================================================
+       FAIXA ROSA
+       ===================================================== */
+
+    .hero::after {
+        width: 78%;
+        height: 68px;
+
+        right: -20%;
+        top: 58%;
+
+        transform: rotate(-31deg);
+
+        z-index: 2;
+    }
+
+
+    /* =====================================================
+       LINHA DOURADA
+       ===================================================== */
+
+    .hero .container::before {
+        width: 24%;
+
+        right: -2%;
+        top: 55%;
+
+        transform: rotate(-31deg);
+
+        z-index: 3;
+    }
+
+
+    /* =====================================================
+       LOGO
+       ===================================================== */
+
+    .logo-hero {
+        top: 22px;
+        left: 3%;
+
+        width: 62px;
+    }
+
+
+    /* =====================================================
+       NAVEGAÇÃO
+       ===================================================== */
+
+    .hero-nav {
+        top: 30px;
+        right: 0;
+
+        gap: 20px;
+    }
+
+    .hero-nav a {
+        font-size: 10px;
+        letter-spacing: 0.8px;
+    }
+
+
+    /* =====================================================
+       CONTEÚDO
+       VOLTA PARA DUAS COLUNAS
+       ===================================================== */
+
+    .hero-content {
+        display: grid;
+
+        grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.72fr);
+
+        align-items: center;
+
+        column-gap: 20px;
+
+        min-height: calc(100vh - 50px);
+
+        padding-top: 55px;
+    }
+
+
+    /* =====================================================
+       LADO ESQUERDO
+       ===================================================== */
+
+    .hero-left {
+        width: 100%;
+
+        transform: translateY(-25px);
+
+        z-index: 15;
+    }
+
+
+    /* =====================================================
+       LADO DIREITO
+       ===================================================== */
+
+    .hero-right {
+        position: relative;
+
+        align-self: stretch;
+
+        width: 100%;
+
+        min-height: 0;
+        height: auto;
+
+        z-index: 10;
+    }
+
+
+    /* =====================================================
+       ETIQUETA
+       ===================================================== */
+
+    .hero-info {
+        margin-top: 25px;
+        margin-bottom: 12px;
+
+        padding: 5px 14px 5px 11px;
+
+        font-size: 11px;
+        letter-spacing: 1.2px;
+    }
+
+
+    /* =====================================================
+       TÍTULO
+       ===================================================== */
+
+    .hero-titulo {
+        max-width: 700px;
+    }
+
+    .hero-titulo h1 {
+        font-size: clamp(38px, 4.15vw, 55px);
+
+        line-height: 0.94;
+
+        letter-spacing: -1px;
+    }
+
+    .titulo-emocional {
+        font-size: clamp(32px, 3.5vw, 39px);
+
+        margin-top: 4px;
+        margin-bottom: -5px;
+    }
+
+    .titulo-destaque {
+        font-size: 1.65em;
+
+        margin-top: 1px;
+        margin-bottom: 2px;
+    }
+
+    .titulo-linha-final {
+        font-size: clamp(32px, 3.5vw, 39px);
+    }
+
+
+    /* =====================================================
+       DESCRIÇÃO
+       ===================================================== */
+
+    .hero-description {
+        max-width: 560px;
+
+        gap: 13px;
+
+        margin-top: 18px;
+    }
+
+    .hero-description p {
+        font-size: 13px;
+
+        line-height: 1.4;
+    }
+
+
+    /* =====================================================
+       FORMULÁRIO
+       ===================================================== */
+
+    .hero-form {
+        max-width: 650px;
+
+        grid-template-columns:
+            1fr
+            1.15fr
+            1.05fr
+            1.15fr;
+
+        gap: 6px;
+
+        margin-top: 18px;
+
+        padding: 11px;
+
+        border-radius: 32px;
+    }
+
+    .hero-input {
+        height: 42px;
+
+        padding: 0 10px;
+    }
+
+    .hero-input input {
+        font-size: 10px;
+    }
+
+    .hero-form button {
+        height: 42px;
+
+        font-size: 9.5px;
+    }
+
+
+    /* =====================================================
+       CLÁUDIA
+       ===================================================== */
+
+    .hero-claudia {
+        position: absolute;
+
+        height: 570px;
+
+        width: auto;
+
+        right: -8%;
+        bottom: -2%;
+
+        max-width: none;
+
+        object-fit: contain;
+
+        z-index: 10;
+    }
+}
 
 /* =========================================================
    TABLET — 769px ATÉ 1100px
@@ -3139,196 +3782,110 @@ clip-path: polygon(
 @media (min-width: 769px) and (max-width: 1100px) {
 
 
-    /* =====================================================
-       HERO
+        /* =====================================================
+       HERO — TABLET
        ===================================================== */
 
     .hero {
-        min-height: auto !important;
-
-        padding: 25px 1px 30px !important;
-
-        box-sizing: border-box;
-
-        overflow: hidden;
+        min-height: auto;
     }
 
     .hero .container {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        margin: 0 auto;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
+        width: 90%;
+        max-width: 900px;
+        min-height: auto;
+        padding: 25px 0 0;
     }
 
+    /* FUNDO VINHO */
 
-    /* LOGO */
-
-    .logo-hero {
-        width: 50px !important;
-
-        top: 25px !important;
-        left: 49.5% !important;
-
-        transform: translateX(-50%) !important;
+    .hero::before {
+        width: 48%;
+        height: 72%;
     }
 
+    /* FAIXA ROSA */
 
-    /* ONLINE / GRATUITO */
+    .hero::after {
+        width: 80%;
+        right: -28%;
+        top: 54%;
+    }
 
-    .hero-info {
+    /* NAVEGAÇÃO */
+
+    .hero-nav {
+        top: 32px;
+        right: 0;
+        gap: 20px;
+    }
+
+    .hero-nav a {
+        font-size: 10px;
+        letter-spacing: 0.9px;
+    }
+
+    /* CONTEÚDO */
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 105px;
+        row-gap: 0;
+    }
+
+    .hero-left {
+        transform: none;
+        z-index: 15;
+        padding-bottom: 25px;
+    }
+
+    .hero-right {
+        min-height: 470px;
+        height: 470px;
         width: 100%;
-        max-width: 650px;
-
-        margin-top: 55px !important;
-        margin-bottom: 25px !important;
-
-        gap: 35px !important;
-
-        justify-content: center;
-
-        box-sizing: border-box;
+        align-self: auto;
     }
-
-    .hero-info::before,
-    .hero-info::after {
-        content: "";
-
-        width: 68px;
-
-        flex-shrink: 1;
-    }
-
 
     /* TÍTULO */
 
-    .hero h1 {
-        width: 100%;
-        max-width: 720px !important;
-
-        margin: 0 auto 10px !important;
-
-        padding: 0;
-
-        font-size: 32px !important;
-        line-height: 1.08 !important;
-
-        text-align: center !important;
+    .hero-titulo {
+        max-width: 760px;
     }
 
-    .titulo-linha,
-    .titulo-secundario,
-    .titulo-destaque {
-        text-align: center !important;
+    .hero-titulo h1 {
+        font-size: clamp(42px, 6vw, 60px);
     }
 
-
-    /* SUBTÍTULO */
-
-    .hero-subtitle {
-        width: 100%;
-        max-width: 650px !important;
-
-        margin: 0 auto 14px !important;
-
-        font-size: 15px !important;
-        line-height: 1.3 !important;
-
-        text-align: center !important;
+    .titulo-emocional {
+        font-size: clamp(34px, 5vw, 46px);
     }
 
-
-    /* CONTEÚDO DO HERO */
-
-    .hero-conteudo {
-        width: 100%;
-        max-width: 900px;
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 14px;
+    .titulo-linha-final {
+        font-size: clamp(34px, 5vw, 46px);
     }
 
+    /* DESCRIÇÃO */
 
-    /* VÍDEO */
-
-    .hero-video {
-        width: 68% !important;
-        max-width: 600px !important;
-
-        height: 290px !important;
-
-        margin: 0 auto 14px !important;
-
-        aspect-ratio: auto !important;
-
-        overflow: hidden;
-
-        box-sizing: border-box;
+    .hero-description {
+        max-width: 650px;
+        margin-top: 20px;
     }
-
-    .hero-video iframe {
-        width: 100%;
-        height: 100%;
-
-        border: 0;
-
-        display: block;
-    }
-
 
     /* FORMULÁRIO */
 
     .hero-form {
-        width: 90% !important;
-        max-width: 620px !important;
-
-        display: grid !important;
-
-        grid-template-columns: 1fr 1fr !important;
-
-        gap: 10px !important;
-
-        margin: 0 auto !important;
-
-        box-sizing: border-box;
+        max-width: 700px;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 28px;
     }
 
-    .hero-form h2 {
-        grid-column: 1 / -1;
+    /* CLÁUDIA */
 
-        margin: 0 0 3px !important;
-
-        font-size: 13px !important;
-
-        text-align: center;
-    }
-
-    .hero-input {
-        width: 100% !important;
-        height: 48px !important;
-    }
-
-    .hero-form input {
-        width: 100% !important;
-        height: 48px !important;
-
-        box-sizing: border-box;
-    }
-
-    .hero-form button {
-        width: 100% !important;
-        height: 48px !important;
-
-        box-sizing: border-box;
+    .hero-claudia {
+        height: 500px;
+        right: 2%;
+        bottom: 0;
     }
 
 
@@ -4656,523 +5213,211 @@ clip-path: polygon(
         box-sizing: border-box;
     }
 
-
     /* =====================================================
-       HERO
+       HERO — MOBILE
        ===================================================== */
 
     .hero {
         min-height: auto;
-        padding: 10px 0 35px;
         overflow: hidden;
     }
 
     .hero .container {
         width: 90%;
         max-width: none;
-
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-
-        box-sizing: border-box;
+        min-height: auto;
+        padding: 20px 0 0;
     }
 
+    /* FUNDO VINHO */
 
-    /* =====================================================
-       LOGO
-       ===================================================== */
+    .hero::before {
+        top: auto;
+        bottom: 0;
+        right: 0;
+
+        width: 82%;
+        height: 42%;
+
+        clip-path: polygon(
+            30% 0,
+            100% 0,
+            100% 100%,
+            0 100%
+        );
+    }
+
+    /* FAIXA ROSA */
+
+    .hero::after {
+        width: 115%;
+        height: 55px;
+
+        right: -35%;
+        top: auto;
+        bottom: 28%;
+
+        transform: rotate(-31deg);
+    }
+
+    /* LOGO */
 
     .logo-hero {
-        position: relative;
-        top: auto;
-        left: auto;
-
-        width: 40px;
-
-        margin: 0 auto 18px;
-
-        z-index: 2;
+        top: 18px;
+        left: 2%;
+        width: 58px;
     }
 
+    /* NAVEGAÇÃO */
 
-    /* =====================================================
-       FLORES DO HERO
-       ===================================================== */
-
-    .flor-esquerda,
-    .flor-direita {
+    .hero-nav {
         display: none;
     }
 
+    /* CONTEÚDO */
 
-    /* =====================================================
-       ONLINE / GRATUITO
-       ===================================================== */
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+
+        min-height: auto;
+        padding-top: 78px;
+
+        gap: 0;
+    }
+
+    .hero-left {
+        width: 100%;
+        transform: none;
+        padding-bottom: 0;
+    }
+
+    /* ETIQUETA */
 
     .hero-info {
-        width: 100%;
-        min-height: 34px;
+        margin-top: 15px;
+        margin-bottom: 14px;
 
-        margin: 0 0 16px;
-        padding: 6px 25px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        gap: 70px;
-
-        position: relative;
-
-        box-sizing: border-box;
-
-        border: 1px solid var(--vinho);
-        border-radius: 18px;
-
-        background-color: var(--vinho);
-    }
-
-    /* linhas laterais */
-
-    .hero-info::before,
-    .hero-info::after {
-        content: "";
-
-        width: 68px;
-        height: 1px;
-
-        flex-shrink: 1;
-
-        background: #9e735d;
-
-        opacity: 0.65;
-    }
-
-    /* textos */
-
-    .hero-info span {
-        display: flex;
-        align-items: center;
-
-        color: white;
-
-        font-family: "Lato", sans-serif;
+        padding: 5px 13px 5px 10px;
 
         font-size: 10px;
-        font-weight: 600;
-
-        letter-spacing: 1.7px;
-
-        line-height: 1;
-
-        white-space: nowrap;
+        letter-spacing: 1.1px;
     }
 
-    /* pontinho central */
-
-    .hero-info .hero-separador {
-        display: block;
-
-        margin: 0 2px;
-
-        color: white !important;
-
-        font-family: Arial, sans-serif;
-
-        font-size: 10px !important;
-        font-weight: 600;
-
-        letter-spacing: 0 !important;
-
-        line-height: 1;
+    .hero-separador {
+        font-size: 9px;
     }
 
+    /* TÍTULO */
 
-    /* =====================================================
-       TÍTULO
-       ===================================================== */
-
-    .hero h1 {
+    .hero-titulo {
         width: 100%;
-        max-width: 100%;
-
-        margin: 0 auto 8px;
-        padding: 0;
-
-        box-sizing: border-box;
-
-        font-size: 27px;
-        line-height: 1.05;
-        font-weight: 500;
-
-        text-align: center;
+        max-width: none;
     }
 
-    .titulo-linha {
-        display: block;
-
-        font-size: 27px;
-        line-height: 1.05;
-
-        text-align: center;
+    .hero-titulo h1 {
+        font-size: clamp(36px, 11vw, 48px);
+        line-height: 0.94;
+        letter-spacing: -0.8px;
     }
 
+    .titulo-linha,
     .titulo-secundario {
-        display: block;
+        white-space: normal;
+    }
 
-        font-size: 23px;
-        line-height: 1.05;
+    .titulo-emocional {
+        white-space: normal;
 
-        text-align: center;
+        margin-top: 7px;
+        margin-bottom: -3px;
+
+        font-size: clamp(27px, 7.8vw, 34px);
+        line-height: 0.98;
+        letter-spacing: -0.5px;
     }
 
     .titulo-destaque {
-        display: block;
-
-        font-size: 37px;
+        font-size: 1.55em;
         line-height: 0.95;
 
-        text-align: center;
+        margin-top: 2px;
+        margin-bottom: 3px;
     }
 
-    .titulo-underline {
-        display: block;
+    .titulo-linha-final {
+        white-space: normal;
 
-        width: 220px;
-        max-width: 70%;
-
-        height: 5px;
-
-        margin: 7px auto 0;
+        font-size: clamp(27px, 7.8vw, 34px);
+        line-height: 0.98;
+        letter-spacing: -0.4px;
     }
 
+    /* DESCRIÇÃO */
 
-    /* =====================================================
-       SUBTÍTULO
-       ===================================================== */
-
-    .hero-subtitle {
+    .hero-description {
         width: 100%;
-        max-width: 100%;
-
-        margin: 5px auto 20px;
-        padding: 0;
-
-        box-sizing: border-box;
-
-        font-size: 15px;
-        line-height: 1.35;
-
-        text-align: center;
-    }
-
-    .hero-subtitle strong {
-        font-size: 17px;
-    }
-
-
-    /* =====================================================
-       VÍDEO + FORMULÁRIO
-       ===================================================== */
-
-    .hero-conteudo {
-        position: relative;
-
-        width: 100%;
-        max-width: 100%;
-
-        margin: 0 auto;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 18px;
-
-        align-items: stretch;
-    }
-
-
-    /* =====================================================
-       VÍDEO
-       ===================================================== */
-
-    .hero-video {
-        position: relative;
-
-        width: 100%;
-        max-width: 100%;
-
-        height: auto;
-
-        aspect-ratio: 16 / 9;
-
-        margin: 0;
-
-        overflow: hidden;
-
-        border-radius: 8px;
-
-        box-sizing: border-box;
-    }
-
-    .hero-video iframe {
-        width: 100%;
-        height: 100%;
-
-        border: 0;
-
-        display: block;
-    }
-
-
-    /* =====================================================
-       FORMULÁRIO
-       ===================================================== */
-
-    .hero-form {
-        position: relative;
-
-        width: 100%;
-        max-width: 100%;
-
-        height: auto;
-        min-height: 0;
-
-        padding: 20px 18px 18px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
+        max-width: none;
 
         gap: 12px;
-
-        margin: 0;
-
-        box-sizing: border-box;
+        margin-top: 20px;
     }
 
-
-    /* =====================================================
-       DECORAÇÃO DO FORMULÁRIO
-       ===================================================== */
-
-    .form-florinha {
-        position: absolute;
-
-        top: 78px;
-        left: 32px;
-
-        color: #e7cda5;
-
-        font-size: 22px;
-
-        line-height: 1;
-
-        z-index: 2;
+    .hero-description-line {
+        width: 2px;
+        min-width: 2px;
     }
 
+    .hero-description p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
 
-    /* =====================================================
-       TÍTULO DO FORMULÁRIO
-       ===================================================== */
+    /* FORMULÁRIO */
 
-    .hero-form h2 {
+    .hero-form {
         width: 100%;
+        max-width: none;
 
-        margin: 0 0 10px;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
 
-        font-family: "Cormorant Garamond", serif;
+        gap: 8px;
+        margin-top: 20px;
+        padding: 12px;
 
-        font-size: 23px;
-        font-weight: 600;
-
-        line-height: 1.05;
-
-        text-align: center;
-
-        color: #fff8f0;
+        border-radius: 24px;
     }
-
-
-    /* =====================================================
-       TEXTO DO FORMULÁRIO
-       ===================================================== */
-
-    .form-subtitle {
-        width: 100%;
-        max-width: 280px;
-
-        margin: 0 auto 7px;
-
-        font-family: "Lato", sans-serif;
-
-        font-size: 10px;
-        line-height: 1.3;
-
-        text-align: center;
-
-        color: #fff3ea;
-    }
-
-
-    /* =====================================================
-       CAMPOS
-       ===================================================== */
 
     .hero-input {
+        height: 44px;
+    }
+
+    .hero-form button {
+        height: 46px;
+    }
+
+    /* ÁREA DA CLÁUDIA */
+
+    .hero-right {
         position: relative;
 
         width: 100%;
-        height: 50px;
+        height: 430px;
+        min-height: 430px;
 
-        margin: 0;
-        padding: 0;
-
-        box-sizing: border-box;
+        margin-top: 5px;
     }
 
+    .hero-claudia {
+        height: 450px;
+        width: auto;
 
-    /* ÍCONES SVG */
+        right: 50%;
+        bottom: 0;
 
-    .hero-input-icon {
-        position: absolute;
-
-        left: 16px;
-        top: 50%;
-
-        transform: translateY(-50%);
-
-        width: 17px;
-        height: 17px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        z-index: 2;
-
-        pointer-events: none;
+        transform: translateX(50%);
     }
-
-    .hero-input-icon svg {
-        width: 17px;
-        height: 17px;
-
-        fill: none;
-
-        stroke: var(--vinho);
-
-        stroke-width: 1.6;
-
-        stroke-linecap: round;
-        stroke-linejoin: round;
-    }
-
-
-    /* INPUT */
-
-    .hero-form input {
-        width: 100%;
-        height: 50px;
-
-        margin: 0;
-
-        padding: 0 15px 0 45px;
-
-        box-sizing: border-box;
-
-        border: 1px solid #AB855F;
-        border-radius: 6px;
-
-        background: #fff8f1;
-
-        font-family: "Lato", sans-serif;
-
-        font-size: 11px;
-
-        color: var(--carvao);
-
-        outline: none;
-    }
-
-    .hero-form input::placeholder {
-        color: var(--carvao);
-
-        opacity: 1;
-
-        font-family: "Lato", sans-serif;
-
-        font-size: 11px;
-    }
-
-
-    /* =====================================================
-       BOTÃO
-       ===================================================== */
-
-    .hero-form button {
-        width: 100%;
-        height: 50px;
-
-        margin: 13px 0 0;
-        padding: 0;
-
-        box-sizing: border-box;
-
-        border: none;
-        border-radius: 7px;
-
-        background: var(--vinho);
-
-        color: white;
-
-        font-family: "Lato", sans-serif;
-
-        font-size: 15px;
-        font-weight: 500;
-
-        cursor: pointer;
-    }
-
-
-    /* =====================================================
-       SEGURANÇA
-       ===================================================== */
-
-    .form-seguranca {
-        width: 100%;
-
-        margin: 0 auto;
-
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-
-        gap: 6px;
-
-        text-align: center;
-    }
-
-    .form-seguranca .cadeado {
-        font-size: 12px;
-    }
-
-    .form-seguranca p {
-        margin: 0;
-
-        font-family: "Lato", sans-serif;
-
-        font-size: 8px;
-        line-height: 1.3;
-
-        color: #fff3ea;
-
-        text-align: left;
-    }
-
 
     /* =====================================================
        RECONHECIMENTO
