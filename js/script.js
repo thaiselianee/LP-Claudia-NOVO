@@ -1707,3 +1707,35 @@ function getStoredUTMs() {
 
 }
 
+/* =========================================================
+   MENU MOBILE
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuMobile = document.querySelector(".menu-mobile");
+    const heroNav = document.querySelector(".hero-nav");
+
+    if (!menuMobile || !heroNav) return;
+
+    menuMobile.addEventListener("click", function () {
+
+        menuMobile.classList.toggle("ativo");
+        heroNav.classList.toggle("menu-aberto");
+
+    });
+
+    /* Fecha o menu quando clicar em uma opção */
+
+    heroNav.querySelectorAll("a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            menuMobile.classList.remove("ativo");
+            heroNav.classList.remove("menu-aberto");
+
+        });
+
+    });
+
+});

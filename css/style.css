@@ -90,9 +90,6 @@ p {
    HERO — NOVO DESIGN
 ========================================================= */
 
-
-
-
 .hero {
     position: relative;
 
@@ -103,7 +100,7 @@ p {
 
     background: #f8f3ec;
 
-    color: #5A1723;
+    color: #760D2A;
 }
 
 
@@ -135,9 +132,9 @@ p {
     background:
         linear-gradient(
             145deg,
-            #681626 0%,
-            #5A1723 55%,
-            #430b16 100%
+            #821632 0%,
+            #760D2A 55%,
+            #4A0817 100%
         );
 
 clip-path: polygon(
@@ -171,9 +168,9 @@ clip-path: polygon(
     background:
         linear-gradient(
             90deg,
-            #800f2b 0%,
-            #B53D5B 50%,
-            #8d2039 100%
+            #8E1538 0%,
+            #C33F63 50%,
+            #9F2545 100%
         );
 
     transform: rotate(-31deg);
@@ -229,7 +226,7 @@ clip-path: polygon(
     right: -4%;
     top: 48%;
 
-    background: #d3a15d;
+    background: #E1B15A;
 
     transform: rotate(-31deg);
 
@@ -239,6 +236,8 @@ clip-path: polygon(
 
     pointer-events: none;
 }
+
+
 /* =========================================================
    LOGO
 ========================================================= */
@@ -304,7 +303,7 @@ clip-path: polygon(
     width: 0;
     height: 2px;
 
-    background: #d3a15d;
+    background: #E1B15A;
 
     transition: width 0.25s ease;
 }
@@ -351,6 +350,7 @@ clip-path: polygon(
     transform: translateY(-55px);
 }
 
+
 /* =========================================================
    LADO DIREITO
 ========================================================= */
@@ -392,9 +392,9 @@ clip-path: polygon(
 
     letter-spacing: 1.5px;
 
-    color: #5A1723;
+    color: #760D2A;
 
-    background: #f3d5d8;
+    background: #F4C9D0;
 
     clip-path: polygon(
         0 8%,
@@ -407,7 +407,7 @@ clip-path: polygon(
 }
 
 .hero-separador {
-    color: #B52F45;
+    color: #E52D4A;
 
     font-size: 12px;
 }
@@ -415,7 +415,7 @@ clip-path: polygon(
 
 /* =========================================================
    TÍTULO PRINCIPAL
-   ========================================================= */
+========================================================= */
 
 .hero-titulo {
     width: 100%;
@@ -432,12 +432,13 @@ clip-path: polygon(
     font-weight: 700;
     line-height: 0.96;
     letter-spacing: -1.4px;
-    color: #5A1723;
+    color: #760D2A;
 }
+
 
 /* =========================================================
    LINHAS DO TÍTULO
-   ========================================================= */
+========================================================= */
 
 .hero-titulo h1 span {
     display: block;
@@ -450,101 +451,26 @@ clip-path: polygon(
 
 /* =========================================================
    COMO SE LIBERTAR — COBRE + PONTOS DE LUZ
-   ========================================================= */
+========================================================= */
 
 .titulo-linha:first-child {
     position: relative;
-
     font-weight: 800;
-
-    /* deixa um pouquinho mais encorpado */
-    -webkit-text-stroke: 0.45px #98452F;
-
+    -webkit-text-stroke: 0.45px #B64A30;
     letter-spacing: -2px;
-
     line-height: 0.90;
-
-    background:
-
-        /* REFLEXO 1 */
-        radial-gradient(
-            circle at 8% 48%,
-            rgba(255, 250, 245, 0.98) 0%,
-            rgba(255, 238, 225, 0.75) 1.1%,
-            rgba(255, 225, 210, 0.18) 2.5%,
-            transparent 4%
-        ),
-
-        /* REFLEXO 2 */
-        radial-gradient(
-            circle at 27% 32%,
-            rgba(255, 252, 248, 0.98) 0%,
-            rgba(255, 237, 222, 0.70) 1.2%,
-            rgba(255, 225, 208, 0.15) 2.5%,
-            transparent 4%
-        ),
-
-        /* REFLEXO 3 */
-        radial-gradient(
-            circle at 43% 62%,
-            rgba(255, 250, 245, 0.95) 0%,
-            rgba(255, 235, 220, 0.60) 1.2%,
-            transparent 3.8%
-        ),
-
-        /* REFLEXO 4 */
-        radial-gradient(
-            circle at 58% 34%,
-            rgba(255, 252, 248, 0.98) 0%,
-            rgba(255, 238, 223, 0.72) 1.2%,
-            rgba(255, 225, 208, 0.15) 2.5%,
-            transparent 4%
-        ),
-
-        /* REFLEXO 5 */
-        radial-gradient(
-            circle at 74% 58%,
-            rgba(255, 250, 245, 0.95) 0%,
-            rgba(255, 235, 220, 0.60) 1.2%,
-            transparent 3.8%
-        ),
-
-        /* REFLEXO 6 */
-        radial-gradient(
-            circle at 91% 35%,
-            rgba(255, 252, 248, 0.95) 0%,
-            rgba(255, 238, 223, 0.60) 1.2%,
-            transparent 3.8%
-        ),
-
-        /* COBRE */
-        linear-gradient(
-            105deg,
-            #8B3F29 0%,
-            #A95135 18%,
-            #C06A4A 32%,
-            #D08767 43%,
-            #A95538 51%,
-            #B96344 64%,
-            #CE8060 76%,
-            #A45135 88%,
-            #8C3E29 100%
-        );
-
+    background: radial-gradient(circle at 8% 48%, rgba(255, 250, 245, 0.98) 0%, rgba(255, 238, 225, 0.75) 1.1%, rgba(255, 225, 210, 0.18) 2.5%, transparent 4%), radial-gradient(circle at 27% 32%, rgba(255, 252, 248, 0.98) 0%, rgba(255, 237, 222, 0.70) 1.2%, rgba(255, 225, 208, 0.15) 2.5%, transparent 4%), radial-gradient(circle at 43% 62%, rgba(255, 250, 245, 0.95) 0%, rgba(255, 235, 220, 0.60) 1.2%, transparent 3.8%), radial-gradient(circle at 58% 34%, rgba(255, 252, 248, 0.98) 0%, rgba(255, 238, 223, 0.72) 1.2%, rgba(255, 225, 208, 0.15) 2.5%, transparent 4%), linear-gradient(105deg, #B84B27 0%, #D95F32 18%, #E87543 32%, #F0834D 43%, #D95F32 51%, #b44c1e 64%, #F0834D 76%, #D45A30 88%, #ae3e19 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-
     color: transparent;
-
-    filter:
-        drop-shadow(0 0 1px rgba(91, 42, 28, 0.35))
-        drop-shadow(0 0 4px rgba(180, 90, 60, 0.12));
+    filter: drop-shadow(0 0 1px rgba(91, 42, 28, 0.35)) drop-shadow(0 0 5px rgba(200, 80, 45, 0.18));
 }
 
+
 /* =========================================================
-   DA DEPENDÊNCIA — MARCA-TEXTO OLIVA
-   ========================================================= */
+   DA DEPENDÊNCIA — MARCA-TEXTO OLIVA VIVO
+========================================================= */
 
 .titulo-secundario {
     position: relative;
@@ -566,9 +492,10 @@ clip-path: polygon(
     margin-bottom: 10px;
 }
 
+
 /* =========================================================
    PINCELADA — DA DEPENDÊNCIA
-   ========================================================= */
+========================================================= */
 
 .titulo-secundario::before {
     content: "";
@@ -585,8 +512,33 @@ clip-path: polygon(
     /* MAIS GROSSO */
     height: 120px;
 
-    background: #687052;
-
+    background:
+    radial-gradient(
+        circle at 18% 38%,
+        rgba(255, 255, 255, 0.35) 0%,
+        rgba(255, 255, 255, 0.12) 1.5%,
+        transparent 4%
+    ),
+    radial-gradient(
+        circle at 47% 62%,
+        rgba(255, 255, 255, 0.28) 0%,
+        rgba(255, 255, 255, 0.10) 1.5%,
+        transparent 4%
+    ),
+    radial-gradient(
+        circle at 76% 30%,
+        rgba(255, 255, 255, 0.32) 0%,
+        rgba(255, 255, 255, 0.10) 1.5%,
+        transparent 4%
+    ),
+    linear-gradient(
+        105deg,
+        #667637 0%,
+        #7C8D45 35%,
+        #87984D 52%,
+        #7C8D45 70%,
+        #647336 100%
+    );
     transform:
         translateY(-50%)
         rotate(-0.8deg);
@@ -695,9 +647,10 @@ clip-path: polygon(
 
 }
 
+
 /* =========================================================
    EMOCIONAL DE UM
-   ========================================================= */
+========================================================= */
 
 .titulo-emocional {
     white-space: nowrap;
@@ -717,8 +670,8 @@ clip-path: polygon(
 
 
 /* =========================================================
-   NARCISISTA — VERMELHO INTENSO + LUZ
-   ========================================================= */
+   NARCISISTA — VERMELHO CEREJA VIBRANTE
+========================================================= */
 
 .titulo-destaque {
     position: relative;
@@ -727,8 +680,7 @@ clip-path: polygon(
 
     width: fit-content;
 
-    color: #C91432;
-
+    color: #E00032;
     background:
 
         /* PONTOS DE LUZ */
@@ -760,28 +712,24 @@ clip-path: polygon(
             transparent 4%
         ),
 
-        /* VERMELHO — MENOS ROSA */
-        linear-gradient(
-            105deg,
-            
-            #A8001F 0%,
-            #D00024 18%,
-            #b30022 32%,
-            #FF2638 40%,
-            #D90025 48%,
-            #C40021 60%,
-            #EF001F 72%,
-            #D00022 86%,
-            #A9001D 100%
-        );
+        /* VERMELHO CEREJA — MAIS VIVO */
+            linear-gradient(
+                105deg,
+                #A90024 0%,
+                #D0002F 20%,
+                #b90029 42%,
+                #F00038 52%,
+                #D0002F 70%,
+                #A90024 100%
+            );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 
     /* MAIS GROSSO */
     font-weight: 900;
-    -webkit-text-stroke: 0.6px #B80020;
 
+    -webkit-text-stroke: 0.6px #980020;
     /* MAIS COMPACTO */
     letter-spacing: -2.5px;
 
@@ -794,15 +742,16 @@ clip-path: polygon(
 
     margin-bottom: 7px;
 
-filter:
-    drop-shadow(0 0 2px rgba(210, 0, 30, 0.55))
-    drop-shadow(0 0 5px rgba(220, 0, 35, 0.28))
-    drop-shadow(0 0 9px rgba(220, 0, 35, 0.12));
+    filter:
+        drop-shadow(0 0 3px rgba(255, 23, 68, 0.75))
+        drop-shadow(0 0 8px rgba(255, 23, 68, 0.40))
+        drop-shadow(0 0 14px rgba(255, 23, 68, 0.18));
 }
+
 
 /* =========================================================
    GRIFO / PINCELADA — NARCISISTA
-   ========================================================= */
+========================================================= */
 
 .titulo-destaque::after {
     content: "";
@@ -820,7 +769,7 @@ filter:
 
     height: 14px;
 
-    background: #C91432;
+    background: #FF1744;
 
     /*
      * Pincelada com movimento:
@@ -892,14 +841,15 @@ filter:
     pointer-events: none;
 }
 
+
 /* =========================================================
    ÚLTIMA LINHA
-   ========================================================= */
+========================================================= */
 
 .titulo-linha-final {
     display: block !important;
 
-    color: #5A1723;
+    color: #760D2A;
 
     font-size: 45px;
 
@@ -918,8 +868,8 @@ filter:
 
 
 /* =========================================================
-   MUDAR? — LARANJA QUEIMADO + REFLEXOS
-   ========================================================= */
+   MUDAR? — LARANJA QUEIMADO MAIS VIVO
+========================================================= */
 
 .mudar-destaque {
     position: relative;
@@ -933,7 +883,7 @@ filter:
 
     letter-spacing: inherit;
 
-    -webkit-text-stroke: 0.45px #963E27;
+    -webkit-text-stroke: 0.45px #B94E32;
 
     background:
 
@@ -955,16 +905,16 @@ filter:
             transparent 4.5%
         ),
 
-        /* LARANJA QUEIMADO */
+        /* LARANJA QUEIMADO MAIS VIVO */
         linear-gradient(
             105deg,
-            #963E27 0%,
-            #e33b08 18%,
-            #C45A32 35%,
-            #D06A3B 50%,
-            #C15A32 65%,
-            #AE492B 82%,
-            #933C26 100%
+            #B94E32 0%,
+            #E55A22 18%,
+            #D66A40 35%,
+            #E0784B 50%,
+            #D66A40 65%,
+            #C65332 82%,
+            #A7442C 100%
         );
 
     -webkit-background-clip: text;
@@ -975,13 +925,13 @@ filter:
 
     filter:
         drop-shadow(0 0 1px rgba(145, 58, 35, 0.35))
-        drop-shadow(0 0 3px rgba(190, 78, 40, 0.12));
+        drop-shadow(0 0 4px rgba(220, 85, 35, 0.18));
 }
 
 
 /* =========================================================
    GRIFO — SOMENTE "MUDAR?"
-   ========================================================= */
+========================================================= */
 
 .mudar-destaque::after {
     content: "";
@@ -996,7 +946,7 @@ filter:
 
     height: 4px;
 
-    background: #A9472C;
+    background: #C95735;
 
     border-radius: 50%;
 
@@ -1006,6 +956,8 @@ filter:
 
     pointer-events: none;
 }
+
+
 /* =========================================================
    DESCRIÇÃO
 ========================================================= */
@@ -1021,6 +973,8 @@ filter:
 
     margin-top: 22px;
 }
+
+
 /* =========================================================
    LINHA VERMELHA
 ========================================================= */
@@ -1030,7 +984,7 @@ filter:
 
     min-width: 3px;
 
-    background: #c52b3d;
+    background: #FF1744;
 
     border-radius: 2px;
 }
@@ -1051,7 +1005,7 @@ filter:
 
     line-height: 1.42;
 
-    color: #49383b;
+    color: #4A3036;
 }
 
 
@@ -1069,11 +1023,13 @@ filter:
     margin-top: 22px;
     padding: 15px;
     box-sizing: border-box;
-    background: #5A1723;
-    border: 1px solid #b98a50;
+    background: #760D2A;
+    border: 1px solid #D5A44E;
     border-radius: 40px;
-    box-shadow: 0 0 0 1px rgba(211, 161, 93, 0.35);
+    box-shadow: 0 0 0 1px rgba(225, 177, 90, 0.40);
 }
+
+
 /* =========================================================
    CAMPOS
 ========================================================= */
@@ -1096,12 +1052,13 @@ filter:
 
     background: transparent;
 
-    border: 1px solid rgba(211, 161, 93, 0.65);
+    border: 1px solid rgba(225, 177, 90, 0.72);
 
     border-radius: 25px;
 
     box-shadow: none;
 }
+
 
 /* =========================================================
    ÍCONES SVG
@@ -1135,6 +1092,8 @@ filter:
 
     stroke-linejoin: round;
 }
+
+
 /* =========================================================
    INPUT
 ========================================================= */
@@ -1178,37 +1137,184 @@ filter:
 ========================================================= */
 
 .hero-form button {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 7px;
+
     width: 100%;
     height: 46px;
+
     margin: 0;
     padding: 0 12px;
+
     box-sizing: border-box;
+
     border: none;
     border-radius: 25px;
-    background: linear-gradient(145deg, hsl(91.2deg 17.48% 28.04%) 1%, #4a573d 65%, #35422c 90%);
+
+    background:
+        radial-gradient(
+            circle at 18% 42%,
+            rgba(255, 255, 255, 0.55) 0%,
+            rgba(255, 255, 255, 0.18) 1.5%,
+            transparent 4%
+        ),
+        radial-gradient(
+            circle at 48% 28%,
+            rgba(255, 255, 255, 0.45) 0%,
+            rgba(255, 255, 255, 0.15) 1.5%,
+            transparent 4%
+        ),
+        radial-gradient(
+            circle at 76% 62%,
+            rgba(255, 255, 255, 0.50) 0%,
+            rgba(255, 255, 255, 0.16) 1.5%,
+            transparent 4%
+        ),
+        radial-gradient(
+            circle at 88% 32%,
+            rgba(255, 255, 255, 0.35) 0%,
+            rgba(255, 255, 255, 0.10) 1.5%,
+            transparent 4%
+        ),
+        linear-gradient(
+            145deg,
+            #627437 0%,
+            #7C963F 30%,
+            #A0B957 52%,
+            #8BA848 72%,
+            #647B38 100%
+        );
+
     color: #ffffff;
+
     font-family: "Lato", sans-serif;
     font-size: 10.5px;
     font-weight: 600;
     letter-spacing: 0.4px;
     white-space: nowrap;
+
     cursor: pointer;
-    transition: background 0.25s ease, transform 0.25s ease;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
 }
 
+
+/* =========================================================
+   LUZ PASSANDO PELO BOTÃO
+========================================================= */
+
+.hero-form button::before {
+    content: "";
+
+    position: absolute;
+
+    top: -60%;
+    left: -45%;
+
+    width: 22%;
+    height: 220%;
+
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.05) 15%,
+        rgba(255, 255, 255, 0.35) 35%,
+        rgba(255, 255, 255, 0.95) 50%,
+        rgba(255, 255, 255, 0.35) 65%,
+        rgba(255, 255, 255, 0.05) 85%,
+        transparent 100%
+    );
+
+    transform: skewX(-20deg);
+
+    filter: blur(2px);
+
+    opacity: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    animation: brilhoBotao 2.8s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   ANIMAÇÃO DA LUZ
+========================================================= */
+
+@keyframes brilhoBotao {
+
+    0% {
+        left: -45%;
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0.9;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    55% {
+        left: 120%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
 .hero-form button:hover {
-    background: #6d8061;
+    background:
+        radial-gradient(
+            circle at 25% 35%,
+            rgba(255, 255, 255, 0.45) 0%,
+            transparent 4%
+        ),
+        radial-gradient(
+            circle at 70% 60%,
+            rgba(255, 255, 255, 0.35) 0%,
+            transparent 4%
+        ),
+        linear-gradient(
+            145deg,
+            #52652D 0%,
+            #718C35 35%,
+            #91AA45 55%,
+            #6F8B35 100%
+        );
 
     transform: translateY(-1px);
 }
 
-.hero-form button span {
-    font-size: 16px;
 
+/* =========================================================
+   SETA
+========================================================= */
+
+.hero-form button span {
+    position: relative;
+    z-index: 2;
+
+    font-size: 16px;
     line-height: 1;
 }
 
@@ -1239,8 +1345,9 @@ filter:
     transform-origin: left center;
 }
 
-
-
+.menu-mobile{
+    display: none;
+}
 
 
 
@@ -3478,69 +3585,48 @@ filter:
 }
 
 /* =========================================================
-   RESPONSIVO — DESKTOP MENOR
-   Aproximadamente 1024px até 1199px
-   ========================================================= */
+   HERO — DESKTOP INTERMEDIÁRIO
+   1101px ATÉ 1199px
 
-/* =========================================================
-   HERO — DESKTOP MENOR
-   1024px ATÉ 1199px
-   ========================================================= */
+   Ajuste exclusivo para o NOVO HERO.
+   Não altera tablet, mobile ou segunda chamada.
+========================================================= */
 
-@media (min-width: 1024px) and (max-width: 1199px) {
-
-    /* =====================================================
-       HERO
-       ===================================================== */
+@media (min-width: 1101px) and (max-width: 1199px) {
 
     .hero {
         min-height: 100vh;
         overflow: hidden;
     }
 
-
-    /* =====================================================
-       CONTAINER
-       ===================================================== */
-
     .hero .container {
         width: 92%;
-        max-width: 1180px;
+        max-width: 1160px;
         min-height: 100vh;
-
         padding: 20px 0 30px;
     }
 
-
     /* =====================================================
-       FUNDO VINHO
-       ===================================================== */
+       FUNDO
+    ===================================================== */
 
     .hero::before {
-        width: 43%;
+        width: 45%;
         height: 100%;
 
         top: 0;
         right: 0;
-
-        clip-path: polygon(
-            18% 0,
-            100% 0,
-            100% 100%,
-            58% 100%
-        );
     }
 
-
     /* =====================================================
-       FAIXA ROSA
-       ===================================================== */
+       FAIXA DIAGONAL
+    ===================================================== */
 
     .hero::after {
-        width: 78%;
+        width: 76%;
         height: 68px;
 
-        right: -20%;
+        right: -23%;
         top: 58%;
 
         transform: rotate(-31deg);
@@ -3548,15 +3634,14 @@ filter:
         z-index: 2;
     }
 
-
     /* =====================================================
        LINHA DOURADA
-       ===================================================== */
+    ===================================================== */
 
     .hero .container::before {
-        width: 24%;
+        width: 25%;
 
-        right: -2%;
+        right: -3%;
         top: 55%;
 
         transform: rotate(-31deg);
@@ -3564,181 +3649,167 @@ filter:
         z-index: 3;
     }
 
-
     /* =====================================================
        LOGO
-       ===================================================== */
+    ===================================================== */
 
     .logo-hero {
         top: 22px;
         left: 3%;
-
-        width: 62px;
+        width: 60px;
     }
 
-
     /* =====================================================
-       NAVEGAÇÃO
-       ===================================================== */
+       MENU
+    ===================================================== */
 
     .hero-nav {
         top: 30px;
         right: 0;
-
-        gap: 20px;
+        gap: 18px;
     }
 
     .hero-nav a {
         font-size: 10px;
-        letter-spacing: 0.8px;
+        letter-spacing: .8px;
     }
 
-
     /* =====================================================
-       CONTEÚDO
-       VOLTA PARA DUAS COLUNAS
-       ===================================================== */
+       HERO — DUAS COLUNAS
+    ===================================================== */
 
     .hero-content {
         display: grid;
 
-        grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.72fr);
+        grid-template-columns:
+            minmax(0, 1.08fr)
+            minmax(290px, .72fr);
 
         align-items: center;
 
-        column-gap: 20px;
+        column-gap: 15px;
 
         min-height: calc(100vh - 50px);
 
         padding-top: 55px;
     }
 
-
     /* =====================================================
        LADO ESQUERDO
-       ===================================================== */
+    ===================================================== */
 
     .hero-left {
         width: 100%;
 
-        transform: translateY(-25px);
+        transform: translateY(-20px);
 
         z-index: 15;
     }
 
-
     /* =====================================================
        LADO DIREITO
-       ===================================================== */
+    ===================================================== */
 
     .hero-right {
         position: relative;
 
-        align-self: stretch;
-
         width: 100%;
-
-        min-height: 0;
         height: auto;
+        min-height: 0;
+
+        align-self: stretch;
 
         z-index: 10;
     }
 
-
     /* =====================================================
        ETIQUETA
-       ===================================================== */
+    ===================================================== */
 
     .hero-info {
         margin-top: 25px;
         margin-bottom: 12px;
 
-        padding: 5px 14px 5px 11px;
+        padding: 5px 13px 5px 11px;
 
-        font-size: 11px;
-        letter-spacing: 1.2px;
+        font-size: 10px;
+        letter-spacing: 1.1px;
     }
-
 
     /* =====================================================
        TÍTULO
-       ===================================================== */
+    ===================================================== */
 
     .hero-titulo {
-        max-width: 700px;
+        max-width: 680px;
     }
 
     .hero-titulo h1 {
-        font-size: clamp(38px, 4.15vw, 55px);
+        font-size: clamp(38px, 4vw, 52px);
 
-        line-height: 0.94;
-
+        line-height: .94;
         letter-spacing: -1px;
     }
 
     .titulo-emocional {
-        font-size: clamp(32px, 3.5vw, 39px);
+        font-size: clamp(31px, 3.4vw, 38px);
 
         margin-top: 4px;
-        margin-bottom: -5px;
+        margin-bottom: -4px;
     }
 
     .titulo-destaque {
-        font-size: 1.65em;
+        font-size: 1.6em;
 
         margin-top: 1px;
         margin-bottom: 2px;
     }
 
     .titulo-linha-final {
-        font-size: clamp(32px, 3.5vw, 39px);
+        font-size: clamp(31px, 3.4vw, 38px);
     }
-
 
     /* =====================================================
        DESCRIÇÃO
-       ===================================================== */
+    ===================================================== */
 
     .hero-description {
-        max-width: 560px;
+        max-width: 540px;
 
-        gap: 13px;
+        gap: 12px;
 
-        margin-top: 18px;
+        margin-top: 17px;
     }
 
     .hero-description p {
-        font-size: 13px;
-
+        font-size: 12.5px;
         line-height: 1.4;
     }
 
-
     /* =====================================================
        FORMULÁRIO
-       ===================================================== */
+    ===================================================== */
 
     .hero-form {
-        max-width: 650px;
+        max-width: 620px;
 
         grid-template-columns:
             1fr
-            1.15fr
-            1.05fr
-            1.15fr;
+            1.1fr
+            1fr
+            1.1fr;
 
         gap: 6px;
 
-        margin-top: 18px;
+        margin-top: 17px;
 
-        padding: 11px;
+        padding: 10px;
 
-        border-radius: 32px;
+        border-radius: 30px;
     }
 
     .hero-input {
-        height: 42px;
-
+        height: 41px;
         padding: 0 10px;
     }
 
@@ -3747,24 +3818,21 @@ filter:
     }
 
     .hero-form button {
-        height: 42px;
-
+        height: 41px;
         font-size: 9.5px;
     }
 
-
     /* =====================================================
        CLÁUDIA
-       ===================================================== */
+    ===================================================== */
 
     .hero-claudia {
         position: absolute;
 
-        height: 570px;
-
+        height: 550px;
         width: auto;
 
-        right: -8%;
+        right: -7%;
         bottom: -2%;
 
         max-width: none;
@@ -3775,14 +3843,14 @@ filter:
     }
 }
 
+
 /* =========================================================
    TABLET — 769px ATÉ 1100px
    ========================================================= */
 
 @media (min-width: 769px) and (max-width: 1100px) {
 
-
-        /* =====================================================
+    /* =====================================================
        HERO — TABLET
        ===================================================== */
 
@@ -3800,16 +3868,23 @@ filter:
     /* FUNDO VINHO */
 
     .hero::before {
-        width: 48%;
-        height: 72%;
+        width: 38%;
+
+        clip-path: polygon(
+            22% 0,
+            100% 0,
+            100% 100%,
+            60% 100%
+        );
     }
 
     /* FAIXA ROSA */
 
     .hero::after {
-        width: 80%;
-        right: -28%;
-        top: 54%;
+        width: 68%;
+        right: -30%;
+        top: 62%;
+        height: 60px;
     }
 
     /* NAVEGAÇÃO */
@@ -3828,10 +3903,19 @@ filter:
     /* CONTEÚDO */
 
     .hero-content {
-        grid-template-columns: 1fr;
+        display: grid;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(260px, 360px);
+
+        align-items: center;
+
+        gap: 20px;
+
         min-height: auto;
-        padding-top: 105px;
-        row-gap: 0;
+
+        padding-top: 90px;
     }
 
     .hero-left {
@@ -3841,10 +3925,16 @@ filter:
     }
 
     .hero-right {
-        min-height: 470px;
-        height: 470px;
-        width: 100%;
-        align-self: auto;
+        position: relative;
+
+        min-height: 420px;
+        height: 420px;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        z-index: 10;
     }
 
     /* TÍTULO */
@@ -3854,15 +3944,15 @@ filter:
     }
 
     .hero-titulo h1 {
-        font-size: clamp(42px, 6vw, 60px);
+        font-size: clamp(48px, 5vw, 72px);
     }
 
     .titulo-emocional {
-        font-size: clamp(34px, 5vw, 46px);
+        font-size: clamp(38px, 4vw, 50px);
     }
 
     .titulo-linha-final {
-        font-size: clamp(34px, 5vw, 46px);
+        font-size: clamp(38px, 4vw, 50px);
     }
 
     /* DESCRIÇÃO */
@@ -3883,1320 +3973,19 @@ filter:
     /* CLÁUDIA */
 
     .hero-claudia {
-        height: 500px;
-        right: 2%;
+        position: absolute;
+
+        height: clamp(360px, 45vw, 500px);
+
+        width: auto;
+
+        right: -20px;
         bottom: 0;
-    }
-
-
-   /* =====================================================
-   RECONHECIMENTO — DESKTOP
-   ===================================================== */
-
-.reconhecimento {
-    background-color: #F8F3EC;
-
-    min-height: 600px;
-
-    padding: 80px 40px 55px;
-
-    text-align: center;
-}
-
-
-.reconhecimento .container {
-    max-width: 1200px;
-
-    margin: 0 auto;
-}
-
-
-/* =====================================================
-   A PERGUNTA
-   ===================================================== */
-
-.reconhecimento > .container > .section-label {
-    display: block;
-
-    margin-bottom: 16px;
-
-    font-family: "Lato", sans-serif;
-
-    font-size: 13px;
-    font-weight: 400;
-
-    letter-spacing: 0.5px;
-
-    color: #8A3040;
-}
-
-
-/* =====================================================
-   TÍTULO
-   ===================================================== */
-
-.reconhecimento h2 {
-    max-width: 900px;
-
-    margin: 0 auto 20px;
-
-    font-family: "Cormorant Garamond", serif;
-
-    font-size: 42px;
-
-    font-weight: 500;
-
-    line-height: 1.02;
-
-    letter-spacing: -0.3px;
-
-    color: #5A1723;
-}
-
-
-/* =====================================================
-   ME LIBERTAR
-   ===================================================== */
-
-.reconhecimento .titulo-libertar {
-    display: inline;
-
-    color: #8E1F35;
-
-    font-weight: 700;
-
-    position: static;
-
-    padding: 0;
-}
-
-
-/* SEM SUBLINHADO */
-.reconhecimento .titulo-libertar::after {
-    display: none;
-}
-
-
-/* =====================================================
-   TEXTO EXPLICATIVO
-   ===================================================== */
-
-.reconhecimento > .container > p:not(.destaque) {
-    max-width: 720px;
-
-    margin: 0 auto 16px;
-
-    font-family: "Lato", sans-serif;
-
-    font-size: 16px;
-
-    font-weight: 400;
-
-    line-height: 1.4;
-
-    color: #2D2325;
-}
-
-
-/* =====================================================
-   FRASE DE DESTAQUE
-   ===================================================== */
-
-.reconhecimento .destaque {
-    margin: 20px auto 34px;
-
-    font-family: "Lato", sans-serif;
-
-    font-size: 19px;
-
-    font-weight: 700;
-
-    line-height: 1.3;
-
-    color: #B14F5E;
-}
-
-
-/* =====================================================
-   4 CARDS
-   ===================================================== */
-
-.reconhecimento-itens {
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 18px;
-
-    width: 100%;
-
-    max-width: 1150px;
-
-    margin: 0 auto;
-}
-
-
-/* =====================================================
-   CARD
-   ===================================================== */
-
-.reconhecimento-itens .reconhecimento-item {
-
-    position: relative;
-
-    min-height: 255px;
-
-    padding: 30px 22px 24px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: flex-start;
-
-    box-sizing: border-box;
-
-    text-align: center;
-
-    background: linear-gradient(
-        145deg,
-        #5A1723 0%,
-        #7A2635 100%
-    );
-
-    border: 1px solid rgba(200, 169, 133, 0.55);
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 7px 20px rgba(90, 23, 35, 0.14),
-        0 0 12px rgba(185, 119, 126, 0.10);
-}
-
-
-/* =====================================================
-   NÚMEROS
-   ===================================================== */
-
-.reconhecimento-itens .reconhecimento-item::before {
-
-    position: absolute;
-
-    top: 12px;
-    right: 15px;
-
-    font-family: "Cormorant Garamond", serif;
-
-    font-size: 32px;
-
-    line-height: 1;
-
-    font-weight: 500;
-
-    color: rgba(248, 243, 236, 0.48);
-
-    z-index: 0;
-}
-
-
-.reconhecimento-itens .reconhecimento-item:nth-child(1)::before {
-    content: "01";
-}
-
-.reconhecimento-itens .reconhecimento-item:nth-child(2)::before {
-    content: "02";
-}
-
-.reconhecimento-itens .reconhecimento-item:nth-child(3)::before {
-    content: "03";
-}
-
-.reconhecimento-itens .reconhecimento-item:nth-child(4)::before {
-    content: "04";
-}
-
-
-/* linha decorativa do número */
-
-.reconhecimento-itens .reconhecimento-item::after {
-
-    content: "";
-
-    position: absolute;
-
-    top: 45px;
-    right: 16px;
-
-    width: 22px;
-    height: 1px;
-
-    background: rgba(200, 169, 133, 0.45);
-}
-
-
-/* =====================================================
-   ÍCONES
-   ===================================================== */
-
-.reconhecimento-item .icon {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    width: 56px;
-
-    height: 56px;
-
-    margin-bottom: 20px;
-
-    border: 1px solid rgba(248, 243, 236, 0.40);
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.06);
-
-    color: #C8A985;
-
-    flex-shrink: 0;
-}
-
-
-.reconhecimento-item .icon svg {
-
-    width: 30px;
-
-    height: 30px;
-
-    fill: none;
-
-    stroke: currentColor;
-
-    stroke-width: 1.5;
-
-    stroke-linecap: round;
-
-    stroke-linejoin: round;
-}
-
-
-/* =====================================================
-   TEXTO DOS CARDS
-   ===================================================== */
-
-.reconhecimento-itens .reconhecimento-item p {
-
-    position: relative;
-
-    z-index: 1;
-
-    max-width: 205px;
-
-    margin: 0;
-
-    font-family: "Lato", sans-serif;
-
-    font-size: 14px;
-
-    font-weight: 400;
-
-    line-height: 1.42;
-
-    color: #F8F3EC;
-
-}
-
-
-/* destaque do primeiro trecho do card 04 */
-
-.reconhecimento-itens .card-frase-destaque {
-
-    font-weight: 700;
-
-    color: #F8F3EC;
-}
-
-
-/* =====================================================
-   CARD 04 — PEQUENA DIFERENÇA
-   ===================================================== */
-
-.reconhecimento-itens .reconhecimento-item:last-child {
-
-    background: linear-gradient(
-        145deg,
-        #7A2635 0%,
-        #8E3040 100%
-    );
-
-    border-color: rgba(200, 169, 133, 0.70);
-
-    box-shadow:
-        0 8px 23px rgba(90, 23, 35, 0.18),
-        0 0 14px rgba(185, 119, 126, 0.14);
-}
-
-
-/* =====================================================
-   FRASE FINAL
-   ===================================================== */
-
-.reconhecimento-final {
-
-    margin-top: 28px;
-}
-
-
-/* primeira frase */
-
-.reconhecimento-final p:first-child {
-
-    max-width: 720px;
-
-    margin: 0 auto 8px;
-
-    font-family: "Cormorant Garamond", serif;
-
-    font-size: 19px;
-
-    font-weight: 500;
-
-    line-height: 1.2;
-
-    color: #B14F5E;
-
-    text-align: center;
-
-    white-space: nowrap;
-}
-
-
-/* caminhada */
-
-.reconhecimento-final .palavra-destaque {
-
-    display: inline;
-
-    font-family: "Cormorant Garamond", serif;
-
-    font-size: 20px;
-
-    font-weight: 600;
-
-    color: #8E3040;
-
-    letter-spacing: 0;
-}
-
-
-/* texto final */
-
-.reconhecimento-final p:last-child {
-
-    max-width: 550px;
-
-    margin: 0 auto;
-
-    font-family: "Lato", sans-serif;
-
-    font-size: 14px;
-
-    font-weight: 400;
-
-    line-height: 1.35;
-
-    color: #2D2325;
-}
-
-
-    /* =====================================================
-       ENCONTRO
-       ===================================================== */
-
-    .encontro {
-        padding: 40px 0 42px;
-    }
-
-    .encontro .section-title {
-        gap: 18px;
-
-        margin-bottom: 32px;
-    }
-
-    .encontro .section-title span {
-        width: 90px;
-    }
-
-    .encontro .section-title h2 {
-        font-size: 21px;
-    }
-
-
-    /* ITENS */
-
-    .encontro-items {
-        width: 90%;
-
-        max-width: 900px;
-
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-
-    /* CADA ITEM */
-
-    .encontro-item {
-        min-height: 155px;
-
-        padding: 0 15px;
-    }
-
-
-    /* ÍCONES */
-
-    .encontro-item .icon {
-        width: 46px;
-        height: 46px;
-
-        margin-bottom: 14px;
-    }
-
-    .encontro-item .icon svg {
-        width: 42px;
-        height: 42px;
-    }
-
-
-    /* TEXTO */
-
-    .encontro-item p {
-        max-width: 170px;
-
-        font-size: 14px;
-
-        line-height: 1.3;
-    }
-
-
-    /* REMOVE FLORES */
-
-    .encontro::before,
-    .encontro::after {
-        display: none !important;
-    }
-
-
-    /* =====================================================
-       DETALHES DO ENCONTRO
-       ===================================================== */
-
-    .detalhes {
-        padding: 25px 25px 25px;
-    }
-
-    .detalhes h2 {
-        font-size: 20px;
-
-        margin-bottom: 14px;
-    }
-
-    .detalhes-box {
-        width: 90%;
-
-        max-width: 850px;
-
-        min-height: 85px;
-    }
-
-    .detalhe-item {
-        gap: 10px;
-    }
-
-    .detalhe-item .icon {
-        width: 38px;
-        height: 38px;
-    }
-
-    .detalhe-item .icon svg {
-        width: 32px;
-        height: 32px;
-    }
-
-    .detalhe-item > div > span {
-        font-size: 14px;
-    }
-
-    .detalhe-item p {
-        font-size: 16px;
-    }
-
-
-    /* =====================================================
-       SOBRE A CLÁUDIA
-       ===================================================== */
-
-    .sobre-claudia-content {
-        grid-template-columns: 45% 55%;
-
-        align-items: stretch;
-    }
-
-    .sobre-claudia-imagem {
-        min-height: 400px;
-    }
-
-    .sobre-claudia-texto {
-        display: flex !important;
-
-        flex-direction: column !important;
-
-        align-items: center !important;
-
-        justify-content: flex-start !important;
-
-        padding: 20px 35px !important;
-    }
-
-    .sobre-label {
-        order: 1 !important;
-
-        width: 100% !important;
-
-        margin: 0 0 6px 0 !important;
-
-        padding: 0 !important;
-
-        text-align: center !important;
-
-        align-self: center !important;
-
-        position: static !important;
-
-        transform: none !important;
-    }
-
-    .sobre-decoration {
-        order: 2 !important;
-
-        width: 100% !important;
-
-        max-width: 100% !important;
-
-        height: auto !important;
-
-        display: flex !important;
-
-        justify-content: center !important;
-
-        align-items: center !important;
-
-        margin: 0 auto 12px auto !important;
-
-        padding: 0 !important;
-
-        position: static !important;
-
-        transform: none !important;
-    }
-
-    .sobre-claudia-texto h2 {
-        order: 3 !important;
-
-        width: 100% !important;
-
-        margin: 0 0 16px 0 !important;
-
-        padding: 0 !important;
-
-        text-align: center !important;
-
-        align-self: center !important;
-
-        font-size: 32px;
-    }
-
-    .sobre-claudia-texto > p:not(.sobre-label) {
-        order: 4 !important;
-
-        width: 100% !important;
-
-        margin-left: 0 !important;
-
-        margin-right: 0 !important;
-
-        text-align: left !important;
-
-        font-size: 15px;
-
-        line-height: 1.3;
-    }
-
-    .sobre-claudia-texto img {
-        order: 5 !important;
-
-        display: block !important;
-
-        margin-left: auto !important;
-
-        margin-right: auto !important;
-    }
-
-    .sobre-logo {
-        order: 5 !important;
-
-        display: flex !important;
-
-        margin-top: 10px !important;
-
-        margin-left: auto !important;
-
-        margin-right: auto !important;
-    }
-
-
-    /* =====================================================
-       SEGUNDA CHAMADA
-       ===================================================== */
-
-    .segunda-chamada {
-        padding: 45px 0 40px;
-    }
-
-    .cta-content {
-        width: 90%;
-
-        max-width: 920px;
-
-        grid-template-columns: 40% 60%;
-
-        column-gap: 25px;
-
-        align-items: center;
-    }
-
-    .cta-texto h2 {
-        font-size: 34px;
-
-        line-height: 1.2;
-    }
-
-    .cta-texto p {
-        font-size: 24px;
-
-        line-height: 1.2;
-    }
-
-    .cta-form {
-        width: 100%;
-
-        gap: 10px;
-    }
-
-    .cta-form input {
-        width: 100%;
-
-        margin-left: 0;
-
-        height: 50px;
-    }
-
-
-    /* ÍCONES */
-
-    .cta-form .input-icon {
-        left: 30px;
-
-        top: 50%;
-
-        transform: translateY(-50%);
-    }
-
-
-    /* BOTÃO */
-
-    .cta-form button {
-        width: 100%;
-
-        margin-left: 0;
-
-        height: 52px;
-
-        font-size: 16px;
-    }
-
-
-    /* REMOVE FLORES */
-
-    .segunda-chamada::before,
-    .segunda-chamada::after {
-        display: none !important;
-    }
-
-
-    /* =====================================================
-       FAQ
-       ===================================================== */
-
-    .faq {
-        padding: 30px 0 28px;
-    }
-
-    .faq .container {
-        width: 90%;
-    }
-
-    .faq .section-title {
-        gap: 20px;
-
-        margin-bottom: 22px;
-    }
-
-    .faq .section-title span {
-        width: 55px;
-    }
-
-    .faq .section-title h2 {
-        font-size: 28px;
-    }
-
-
-    /* LISTA */
-
-    .faq-list {
-        width: 100%;
-
-        max-width: 900px;
-
-        display: flex;
-
-        flex-direction: column;
-
-        gap: 10px;
-
-        margin: 0 auto;
-    }
-
-
-    /* CARD */
-
-    .faq-item {
-        width: 100%;
-
-        min-height: auto;
 
-        padding: 0;
+        object-fit: contain;
 
-        display: block;
-
-        border: 1px solid rgba(200, 169, 133, 0.65);
-
-        border-radius: 6px;
-
-        background-color: var(--off-white);
-
-        box-shadow: 0 2px 7px rgba(45, 35, 37, 0.12);
-
-        overflow: hidden;
-
-        box-sizing: border-box;
-    }
-
-
-    /* ÁREA CLICÁVEL */
-
-    .faq-item summary {
-        width: 100%;
-
-        min-height: 58px;
-
-        padding: 12px 18px;
-
-        display: flex;
-
-        align-items: center;
-
-        gap: 14px;
-
-        cursor: pointer;
-
-        list-style: none;
-
-        box-sizing: border-box;
-    }
-
-    .faq-item summary::-webkit-details-marker {
-        display: none;
-    }
-
-    .faq-item summary::marker {
-        display: none;
-    }
-
-
-    /* ÍCONE */
-
-    .faq-item .faq-icon {
-        width: 30px;
-        height: 30px;
-
-        flex-shrink: 0;
-
-        margin: 0;
-
-        border: 1.5px solid var(--vinho);
-
-        border-radius: 50%;
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: center;
-    }
-
-    .faq-item .faq-icon svg {
-        width: 21px;
-        height: 21px;
-    }
-
-
-    /* PERGUNTA */
-
-    .faq-question {
-        width: 100%;
-
-        min-width: 0;
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: space-between;
-
-        gap: 15px;
-    }
-
-    .faq-question h3 {
-        margin: 0;
-
-        font-size: 20px;
-
-        font-weight: 500;
-
-        line-height: 1.2;
-    }
-
-
-    /* SETA */
-
-    .faq-question .faq-arrow {
-        display: none !important;
-    }
-
-    .faq-question::after {
-        content: "";
-
-        width: 9px;
-        height: 9px;
-
-        flex-shrink: 0;
-
-        display: block;
-
-        border-right: 2px solid #8D817B;
-
-        border-bottom: 2px solid #8D817B;
-
-        transform: rotate(45deg);
-
-        margin-right: 5px;
-
-        margin-top: -5px;
-
-        box-sizing: border-box;
-
-        transition: transform 0.2s ease;
-    }
-
-    .faq-item[open] .faq-question::after {
-        transform: rotate(225deg);
-
-        margin-top: 5px;
-    }
-
-
-    /* RESPOSTA */
-
-    .faq-answer {
-        display: none;
-
-        margin-left: 0;
-
-        margin-top: 8px;
-    }
-
-    .faq-item[open] .faq-answer {
-        display: block;
-
-        max-height: 300px;
-
-        padding: 0 18px 18px 62px;
-
-        opacity: 1;
-    }
-
-    .faq-answer p {
-        margin: 0;
-
-        color: var(--carvao);
-
-        font-family: "Lato", sans-serif;
-
-        font-size: 18px;
-
-        line-height: 1.45;
-    }
-
-
-    /* =====================================================
-       CONTAINER
-       ===================================================== */
-
-    .container {
-        max-width: 100%;
-    }
-
-
-    /* =====================================================
-       FOOTER
-       ===================================================== */
-
-    .footer {
-        padding: 17px 20px 14px;
-    }
-
-    .footer p {
-        font-size: 10px;
-    }
-
-    .footer-links {
-        margin-top: 9px;
-
-        gap: 7px;
-    }
-
-    .footer-links a {
-        font-size: 10px;
-    }
-
-    .footer-links span {
-        font-size: 9px;
-    }
-
-
-    /* =====================================================
-       QUESTIONÁRIO — TABLET
-       ===================================================== */
-
-    .questionario-overlay {
-        padding: 10px;
-    }
-
-
-    /* FUNDO */
-
-    .questionario-fundo {
-        width: 100%;
-
-        height: 90vh;
-
-        max-height: 680px;
-
-        border-radius: 8px;
-    }
-
-
-    /* LOGO */
-
-    .questionario-logo {
-        top: 18px;
-
-        left: 24px;
-    }
-
-    .questionario-logo span {
-        font-size: 24px;
-    }
-
-    .questionario-logo small {
-        font-size: 7px;
-
-        letter-spacing: 1.5px;
-    }
-
-
-    /* FLORES */
-
-    .flor-imagem {
-        opacity: 0.15;
-    }
-
-    .flor-esquerda {
-        width: 190px;
-
-        left: -75px;
-
-        bottom: -55px;
-
-        transform: rotate(-8deg);
-    }
-
-    .flor-direita {
-        width: 190px;
-
-        right: -55px;
-
-        top: -45px;
-
-        transform: rotate(8deg);
-    }
-
-
-    /* CARD */
-
-    .questionario-card {
-        width: 92%;
-
-        height: auto;
-
-        max-height: 82vh;
-
-        border-radius: 13px;
-    }
-
-
-    /* TOPO */
-
-    .questionario-header {
-        padding: 20px 25px 10px;
-    }
-
-    .progresso-texto {
-        font-size: 10px;
-    }
-
-    .progresso-porcentagem {
-        font-size: 11px;
-
-        position: relative;
-
-        right: 22px;
-
-        top: 4px;
-    }
-
-    .progresso-container {
-        width: calc(100% - 50px);
-    }
-
-
-    /* FECHAR */
-
-    .questionario-fechar {
-        top: 16px;
-
-        right: 17px;
-
-        font-size: 25px;
-    }
-
-
-    /* CONTEÚDO */
-
-    .questionario-conteudo {
-        padding: 25px;
-    }
-
-    .questionario-conteudo h1 {
-        font-size: 21px;
-
-        margin-bottom: 20px;
-    }
-
-
-    /* OPÇÕES */
-
-    .questionario-opcoes {
-        gap: 9px;
-    }
-
-    .questionario-opcao {
-        min-height: 48px;
-
-        padding: 11px 15px;
-
-        font-size: 13px;
-    }
-
-
-    /* TEXTAREA */
-
-    .questionario-texto {
-        min-height: 135px;
-
-        font-size: 13px;
-    }
-
-
-    /* CAMPO OUTRO */
-
-    .questionario-outro {
-        width: 100%;
-
-        height: 42px;
-
-        padding: 0 12px;
-
-        box-sizing: border-box;
-
-        border: 1px solid #D8C9C0;
-
-        border-radius: 9px;
-
-        background: #FFFDFC;
-
-        font-family: "Lato", sans-serif;
-
-        font-size: 13px;
-
-        color: #2D2325;
-
-        outline: none;
-    }
-
-    .questionario-outro::placeholder {
-        color: #8E7770;
-    }
-
-    .questionario-outro:focus {
-        border-color: #7A2635;
-
-        box-shadow:
-            0 0 0 2px rgba(122, 38, 53, 0.08);
-    }
-
-
-    /* ESCALA */
-
-    .questionario-escala {
-        width: 100%;
-
-        max-width: none;
-    }
-
-    .escala-numeros {
-        width: 100%;
-
-        display: flex;
-
-        justify-content: space-between;
-
-        gap: 2px;
-    }
-
-    .escala-opcao {
-        width: 26px;
-
-        height: 26px;
-
-        min-width: 26px;
-
-        flex-shrink: 0;
-
-        font-size: 10px;
-    }
-
-    .escala-legenda {
-        margin-top: 9px;
-
-        font-size: 11px;
-    }
-
-
-    /* NAVEGAÇÃO */
-
-    .questionario-navegacao {
-        padding-top: 25px;
-    }
-
-    .btn-voltar,
-    .btn-proxima {
-        min-width: 105px;
-
-        height: 42px;
-
-        font-size: 12px;
-    }
-
-
-    /* INFORMAÇÕES */
-
-    .questionario-info {
-        display: none;
-    }
-
-
-    /* SUCESSO */
-
-    .questionario-sucesso {
-        min-height: 430px;
-
-        padding: 30px 25px;
-    }
-
-    .sucesso-icone {
-        width: 55px;
-
-        height: 55px;
-
-        margin-bottom: 20px;
-
-        font-size: 25px;
-    }
-
-    .questionario-sucesso h1 {
-        font-size: 21px;
-
-        line-height: 1.3;
-
-        margin-bottom: 15px;
-    }
-
-    .questionario-sucesso p {
-        font-size: 14px;
-
-        line-height: 1.5;
-
-        margin-bottom: 28px;
-    }
-
-    .sucesso-botao {
-        width: 100%;
-
-        max-width: 280px;
-
-        height: 46px;
-
-        font-size: 12px;
+        z-index: 10;
     }
-
 }
 
 
@@ -5206,218 +3995,542 @@ filter:
 
 @media (max-width: 768px) {
 
-    .container {
-        width: 90%;
-        max-width: none;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
-    /* =====================================================
-       HERO — MOBILE
-       ===================================================== */
-
+        /* HERO */
     .hero {
         min-height: auto;
         overflow: hidden;
+        background: #f8f3ec;
+        padding: 0;
     }
 
-    .hero .container {
-        width: 90%;
-        max-width: none;
-        min-height: auto;
-        padding: 20px 0 0;
-    }
-
-    /* FUNDO VINHO */
-
+    /* FUNDO VINHO DIAGONAL */
     .hero::before {
         top: auto;
         bottom: 0;
         right: 0;
-
-        width: 82%;
-        height: 42%;
-
+        width: 100%;
+        height: 43%;
+        background: linear-gradient(
+            145deg,
+            #821632 0%,
+            #760D2A 55%,
+            #4A0817 100%
+        );
         clip-path: polygon(
-            30% 0,
+            0 43%,
             100% 0,
             100% 100%,
             0 100%
         );
+        z-index: 1;
     }
 
-    /* FAIXA ROSA */
-
+    /* RETIRA A FAIXA DIAGONAL DO DESKTOP */
     .hero::after {
-        width: 115%;
-        height: 55px;
-
-        right: -35%;
-        top: auto;
-        bottom: 28%;
-
-        transform: rotate(-31deg);
-    }
-
-    /* LOGO */
-
-    .logo-hero {
-        top: 18px;
-        left: 2%;
-        width: 58px;
-    }
-
-    /* NAVEGAÇÃO */
-
-    .hero-nav {
         display: none;
     }
 
-    /* CONTEÚDO */
+    /* CONTAINER */
+    .hero .container {
+        width: 100%;
+        max-width: none;
+        min-height: auto;
+        margin: 0;
+        padding: 24px 24px 50px;
+        box-sizing: border-box;
+    }
+
+    /* LINHA DECORATIVA DO DESKTOP */
+    .hero .container::before {
+        display: none;
+    }
+
+    /* SETA PARA BAIXO */
+    .hero .container::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 18px;
+        width: 22px;
+        height: 22px;
+        border-right: 3px solid #E1B15A;
+        border-bottom: 3px solid #E1B15A;
+        transform: translateX(-50%) rotate(45deg);
+        z-index: 30;
+    }
+
+
+    /* =====================================================
+       LOGO
+    ===================================================== */
+
+    .logo-hero {
+        position: absolute;
+        top: 23px;
+        left: 24px;
+        width: 54px;
+        height: auto;
+        z-index: 50;
+    }
+
+
+    /* =====================================================
+       MENU HAMBÚRGUER
+    ===================================================== */
+
+    .menu-mobile {
+        position: absolute;
+        top: 29px;
+        right: 25px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+        border: none;
+        background: transparent;
+
+        cursor: pointer;
+        z-index: 60;
+    }
+
+    .menu-mobile span {
+       display: block;
+    width: 31px;
+    height: 3px;
+        margin-left: auto;
+
+        background: #C96A35;
+        border-radius: 1px;
+
+        transition:
+            transform .3s ease,
+            opacity .3s ease,
+            width .3s ease;
+    }
+
+    .menu-mobile.ativo span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .menu-mobile.ativo span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-mobile.ativo span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+
+    /* =====================================================
+       MENU MOBILE ABERTO
+    ===================================================== */
+
+    .hero-nav {
+        position: absolute;
+
+        top: 82px;
+        right: 20px;
+        left: 20px;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 18px 20px;
+
+        background: #760D2A;
+        border: 1px solid #D5A44E;
+        border-radius: 16px;
+
+        box-shadow: 0 12px 35px rgba(70, 0, 20, .25);
+
+        z-index: 55;
+    }
+
+    .hero-nav.menu-aberto {
+        display: flex;
+    }
+
+    .hero-nav a {
+        display: block;
+
+        padding: 15px 5px;
+
+        color: #F8F3EC;
+
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-align: left;
+
+        border-bottom: 1px solid rgba(225, 177, 90, .35);
+    }
+
+    .hero-nav a:last-child {
+        border-bottom: none;
+    }
+
+    .hero-nav a::after {
+        display: none;
+    }
+
+
+    /* =====================================================
+       CONTEÚDO
+    ===================================================== */
 
     .hero-content {
         display: flex;
         flex-direction: column;
 
         min-height: auto;
-        padding-top: 78px;
 
-        gap: 0;
+        padding-top: 50px;
+
+        column-gap: 0;
     }
 
     .hero-left {
         width: 100%;
+        padding: 0;
+
         transform: none;
-        padding-bottom: 0;
+
+        z-index: 20;
     }
 
-    /* ETIQUETA */
-
-    .hero-info {
-        margin-top: 15px;
-        margin-bottom: 14px;
-
-        padding: 5px 13px 5px 10px;
-
-        font-size: 10px;
-        letter-spacing: 1.1px;
-    }
-
-    .hero-separador {
-        font-size: 9px;
-    }
-
-    /* TÍTULO */
-
-    .hero-titulo {
+    .hero-right {
         width: 100%;
-        max-width: none;
+        min-height: auto;
+
+        align-self: auto;
+
+        z-index: 10;
     }
+
+
+   /* =====================================================
+   ENCONTRO EXCLUSIVO — MOBILE
+===================================================== */
+
+.hero-info {
+    margin: 0 auto 12px;
+
+    padding: 4px 13px;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    gap: 7px;
+
+    /* reto e mais para cima */
+    transform: translateY(-37px);
+
+    transform-origin: center;
+}
+
+    /* =====================================================
+       TÍTULO
+    ===================================================== */
+
+.hero-titulo {
+    width: 100%;
+    max-width: none;
+
+    transform: translateY(-12px) rotate(-1.2deg);
+
+    text-align: center;
+}
 
     .hero-titulo h1 {
-        font-size: clamp(36px, 11vw, 48px);
-        line-height: 0.94;
-        letter-spacing: -0.8px;
+        font-size: clamp(39px, 10.5vw, 67px);
+        line-height: .94;
+        letter-spacing: -1px;
+
+        text-align: center;
     }
 
-    .titulo-linha,
+    .titulo-linha {
+        display: block;
+        white-space: nowrap;
+    }
+
+    /* COMO SE LIBERTAR */
+    .titulo-linha:first-child {
+        font-size: 1em;
+        white-space: nowrap;
+    }
+
+ 
+    
     .titulo-secundario {
-        white-space: normal;
+    display: block !important;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 6px auto 7px;
+
+    font-size: 43px;
+    line-height: .92;
+
+    letter-spacing: -1.5px;
+
+    white-space: nowrap;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+ .titulo-secundario::before {
+    height: 68px;
+
+    left: -4%;
+    width: 108%;
+
+    background: #70843A;
+
+    z-index: -1;
+}
+
+    /* EMOCIONAL DE UM */
+.titulo-emocional {
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: .66em;
+    line-height: .98;
+    letter-spacing: -.5px;
+
+    white-space: nowrap;
+}
+
+    /* NARCISISTA */
+.titulo-destaque {
+    display: block !important;
+
+    width: fit-content;
+
+    margin: 1px auto 7px;
+
+    font-size: 1.18em;
+
+    line-height: .88;
+
+    letter-spacing: -2px;
+}
+
+    .titulo-destaque::after {
+        left: 15%;
+        width: 78%;
+        bottom: -7px;
+        height: 10px;
     }
 
-    .titulo-emocional {
-        white-space: normal;
+    /* MESMO SABENDO... */
+.titulo-linha-final {
+    display: block !important;
 
-        margin-top: 7px;
-        margin-bottom: -3px;
+    width: 100%;
 
-        font-size: clamp(27px, 7.8vw, 34px);
-        line-height: 0.98;
-        letter-spacing: -0.5px;
+    margin-top: 8px;
+
+    font-size: .57em;
+
+    line-height: 1.05;
+    letter-spacing: -.2px;
+
+    text-align: center;
+}
+
+    .titulo-linha-final br {
+        display: none;
     }
 
-    .titulo-destaque {
-        font-size: 1.55em;
-        line-height: 0.95;
+    /* MUDAR? */
+    .mudar-destaque {
+        display: block;
 
-        margin-top: 2px;
-        margin-bottom: 3px;
+        width: fit-content;
+
+        margin: 2px auto 0;
+
+        font-size: 1.3em;
     }
 
-    .titulo-linha-final {
-        white-space: normal;
 
-        font-size: clamp(27px, 7.8vw, 34px);
-        line-height: 0.98;
-        letter-spacing: -0.4px;
-    }
-
-    /* DESCRIÇÃO */
+    /* =====================================================
+       DESCRIÇÃO
+    ===================================================== */
 
     .hero-description {
         width: 100%;
         max-width: none;
 
-        gap: 12px;
         margin-top: 20px;
+
+        gap: 13px;
+
+        align-items: stretch;
     }
 
     .hero-description-line {
-        width: 2px;
-        min-width: 2px;
+        width: 3px;
+        min-width: 3px;
+
+        background: #FF1744;
     }
 
     .hero-description p {
-        font-size: 14px;
-        line-height: 1.4;
+        margin: 0;
+
+        font-size: 15px;
+        line-height: 1.43;
+
+        color: #4A3036;
     }
 
-    /* FORMULÁRIO */
+
+    /* =====================================================
+       FOTO DA CLÁUDIA
+    ===================================================== */
+
+    .hero-right {
+        display: none;
+
+       
+    }
+
+    .hero-claudia {
+    display: none;
+    }
+
+
+    /* =====================================================
+       NOME CLÁUDIA DEM + FORMULÁRIO
+    ===================================================== */
 
     .hero-form {
-        width: 100%;
-        max-width: none;
+        position: relative;
 
         display: flex;
         flex-direction: column;
 
-        gap: 8px;
-        margin-top: 20px;
-        padding: 12px;
-
-        border-radius: 24px;
-    }
-
-    .hero-input {
-        height: 44px;
-    }
-
-    .hero-form button {
-        height: 46px;
-    }
-
-    /* ÁREA DA CLÁUDIA */
-
-    .hero-right {
-        position: relative;
-
         width: 100%;
-        height: 430px;
-        min-height: 430px;
+        max-width: 670px;
 
-        margin-top: 5px;
+        gap: 9px;
+
+        margin: 18px auto 75px;
+
+        padding: 28px 18px 24px;
+
+        background: #760D2A;
+
+        border: 2px solid #E1B15A;
+        border-radius: 30px;
+
+        box-sizing: border-box;
+
+        z-index: 20;
+    }
+    
+  
+    .hero-input {
+        width: 100%;
+        height: 56px;
+
+        padding: 0 17px;
+
+        border: 1px solid rgba(225, 177, 90, .9);
+        border-radius: 30px;
     }
 
-    .hero-claudia {
-        height: 450px;
-        width: auto;
-
-        right: 50%;
-        bottom: 0;
-
-        transform: translateX(50%);
+    .hero-input-icon svg {
+        width: 20px;
+        height: 20px;
     }
+
+    .hero-input input {
+        font-size: 13px;
+        letter-spacing: .8px;
+    }
+
+      .hero-form button {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        width: 100%;
+        height: 58px;
+        margin-top: 2px;
+        border-radius: 30px;
+        border: none;
+        background: radial-gradient(circle at 18% 35%, rgba(255, 255, 255, .55) 0 1.5px, transparent 3px), radial-gradient(circle at 37% 70%, rgba(255, 255, 255, .38) 0 1px, transparent 2.5px), radial-gradient(circle at 58% 24%, rgba(255, 255, 255, .50) 0 1.4px, transparent 3px), radial-gradient(circle at 76% 58%, rgba(255, 255, 255, .40) 0 1.2px, transparent 2.5px), radial-gradient(circle at 88% 28%, rgba(255, 255, 255, .35) 0 1px, transparent 2.5px), linear-gradient(135deg, #6F8A34 0%, #788a45 28%, #8da841 50%, #788a45 70%, #788a45 100%);
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: .3px;
+        box-shadow: inset 0 1px 3px rgba(255, 255, 255, .40), inset 0 -3px 7px rgba(50, 70, 15, .28), 0 3px 10px rgba(70, 90, 25, .25);
+        cursor: pointer;
+        transition: transform .25s ease, box-shadow .3s ease, filter .3s ease;
+    }
+
+
+        .hero-form button::before {
+            content: "";
+
+            position: absolute;
+            top: -20%;
+            left: -80%;
+
+            width: 55%;
+            height: 140%;
+
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,.12),
+                rgba(255,255,255,.55),
+                rgba(255,255,255,.12),
+                transparent
+            );
+
+            transform: rotate(18deg);
+
+            animation: brilhoBotao 3.5s ease-in-out infinite;
+
+            pointer-events: none;
+
+            z-index: -1;
+        }
+
+        @keyframes brilhoBotao {
+            0% {
+                left: -80%;
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            55% {
+                left: 125%;
+                opacity: 0;
+            }
+
+            100% {
+                left: 125%;
+                opacity: 0;
+            }
+        }
 
     /* =====================================================
        RECONHECIMENTO
